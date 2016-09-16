@@ -1,0 +1,28 @@
+<div>
+    <ul class="tabs">
+        <li ng-repeat="(key, value) in data"
+            class="{{key}}"
+            ng-class="{active: isSet($index)}">
+            <a ng-click="setTab($index)">
+                <div class="indicator"
+                     percentage="{{value.percentage}}">
+                    <!--<i class="fa"
+                       ng-class="{'fa-low-vision': key == 'ux',
+                   'fa-paint-brush' : key == 'ui',
+                   'fa-hashtag' : key == 'fe'}"
+                       aria-hidden="true"></i>-->
+                </div>
+                <i class="fa"
+                   ng-class="{'fa-low-vision': key == 'ux',
+                   'fa-paint-brush' : key == 'ui',
+                   'fa-hashtag' : key == 'fe'}"
+                   aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+    <div ng-repeat="(key, value) in data">
+        <div ng-if="isSet($index)">
+            {{value.roleSet.join(', ')}}
+        </div>
+    </div>
+</div>

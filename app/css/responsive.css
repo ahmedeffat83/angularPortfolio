@@ -1,0 +1,58 @@
+@media (min-width: 768px) {
+
+    .headerContainer {
+        padding: 0 45px;
+        height: 80px;
+    }
+    .navLogo {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .contentWrapper {
+        padding-top: 80px;
+    }
+
+    .projects > li .introContainer {
+        padding: 0 30px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .flexHorizontal {
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .headerContainer {
+        padding: 0 80px;
+    }
+
+
+    .projects > li .introContainer {
+        position: relative;
+    }
+
+    .projects > li .introContainer > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 30px;
+        border-radius: 5px 0 0 5px;
+        -webkit-border-radius: 5px 0 0 5px;
+    }
+    .projects > li.even .introContainer > div {
+        right: 30px;
+        left: 0;
+        border-radius: 0 5px 5px 0;
+        -webkit-border-radius: 0 5px 5px 0;
+    }
+
+}

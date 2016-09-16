@@ -1,0 +1,286 @@
+@charset "utf-8";
+@import "fonts.css";
+@import "../fonts/fonts.css";
+/************************************************************/
+body {
+    background-color: rgba(255,110,10, 1);
+}
+body * {
+    font-family: 'SF UI Display Light', sans-serif, Arial, Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    color: rgba(0,0,0, 0.6);
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display:block;
+}
+.flexHorizontal {
+    display: block;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+/************************************************************/
+/***** header directive *************************************/
+/************************************************************/
+.headerWrapper {
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    border: unset;
+    margin-bottom: unset;
+}
+.headerContainer {
+    padding:0 20px;
+    position: relative;
+    height: 60px;
+}
+.headerNavbar {
+    height: 100%;
+    position: relative;
+}
+.navbar-toggle {
+    position: absolute;
+    margin: 0;
+    float: unset;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+/************************************************************/
+.navLogo {
+    display: block;
+    text-indent: -9999px;
+    text-align: left;
+    direction: ltr;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/bg/navLogo.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    position: absolute;
+    top:50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+/************************************************************/
+.headerContainer .mainNav > li {
+    position: relative;
+}
+.headerContainer .mainNav > li > a {
+    font-size: 16px;
+    font-family: "geog-sbit";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #5d5d5d;
+    background-color: unset;
+    padding: 30px 15px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.headerContainer .mainNav > li > a:hover,
+.headerContainer .mainNav > li > a:focus,
+.headerContainer .mainNav > li.active > a,
+.headerContainer .mainNav > li.active > a:hover,
+.headerContainer .mainNav > li.active > a:focus {
+    color:rgba(255,110,10, 1);
+    background-color: unset;
+}
+.headerContainer .mainNav > li.active > a {}
+/************************************************************/
+.headerContainer .mainNav > li > a:after,
+.tabs > li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 15px;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    background-image: url(../img/bg/navActive.svg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 30px 15px;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.headerContainer .mainNav > li.active > a:after {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+/************************************************************/
+/***** ENDOF: header directive ******************************/
+/************************************************************/
+.contentWrapper {
+    padding:0;
+    padding-top: 60px;
+    background-color: rgba(255,255,255, 1);
+}
+.contentWrapper > .portfolioWrapper {
+    background-color: rgba(255,255,255, 1);
+    background-image: -webkit-linear-gradient(240deg, #07b5d0, #39f2c0, #39f2c0, #d1e351, #fd5b1b, #fc33a4, #aa18ba, #0e5cde, #04a7e5, #39f2c0, #07b5d0);
+    background-image: linear-gradient(-150deg, #07b5d0, #39f2c0, #39f2c0, #d1e351, #fd5b1b, #fc33a4, #aa18ba, #0e5cde, #04a7e5, #39f2c0, #07b5d0)
+}
+/************************************************************/
+/***** portfolio ********************************************/
+/************************************************************/
+.projects {
+    padding: 15px 0;
+}
+.projects > li {
+    /*opacity:0.25;*/
+    padding: 15px 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.projects > li:first-child {
+    opacity:1;
+}
+.projects > li.odd {
+    flex-direction: row;
+}
+.projects > li.even {
+    flex-direction: row-reverse;
+}
+
+.sliderContainer {
+    position: relative;
+    padding: 0;
+}
+.sliderContainer .slides > ul {
+    height: 100%;
+}
+.sliderContainer .slides li {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 40px;
+}
+.sliderContainer .pages {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.projects > li .introContainer {}
+
+.projects > li .introContainer > div {
+    padding: 30px;
+    background-color: rgba(255,255,255, 1);
+}
+.projects > li.even .introContainer > div {}
+
+
+.projects > li .introContainer {
+    padding: 0 15px;
+}
+
+.projects > li .introContainer > div {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+}
+/************************************************************/
+/************************************************************/
+/************************************************************/
+
+
+
+/************************************************************/
+/***** tabs directive ***************************************/
+.tabs {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0, 0.15);
+}
+.tabs > li {
+    padding: 0 7.5px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 21px;
+    margin-bottom: -1px;
+}
+.tabs > li:first-child {
+    margin-left: -7.5px;
+}
+.tabs > li > a,
+.tabs > li > a > .indicator {
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    background-color: rgba(0,0,0, 0.1);
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+.tabs > li > a > i {
+    position: absolute;
+    z-index: 1;
+    font-size: 18px;
+    color: rgba(255,255,255, 1);
+}
+.tabs > li > a > .indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: rgba(0,0,0, 0.25);
+}
+.tabs > li > a > .indicator * {
+    color: rgba(255,255,255, 1);
+}
+.tabs > li.active > a,
+.tabs > li.active > a > .indicator{
+    cursor: default;
+}
+.tabs > li.active > a,
+.tabs > li > a:hover {
+    background-color: rgba(255,110,10, 0.25);
+}
+.tabs > li.active .indicator,
+.tabs > li > a:hover .indicator {
+    background-color: rgba(255,110,10, 1);
+}
+
+
+.tabs > li:after {
+    top: auto;
+    bottom: 0;
+    height: 16px;
+    -webkit-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%);
+    background-image: url(../img/bg/tabActive.svg);
+    background-size: 30px 16px;
+}
+.tabs > li.active:after {
+    -webkit-transform: translate(-50%, 1px);
+    transform: translate(-50%, 1px);
+}

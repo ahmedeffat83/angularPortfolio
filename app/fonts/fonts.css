@@ -1,0 +1,44 @@
+/*************************************************************/
+/********************** English Fonts ************************/
+/*************************************************************/
+
+@font-face {
+  font-family: 'SF UI Display Bold';
+  src: url('SF/SF-UI-Display-Bold/SF-UI-Display-Bold.eot'); /* IE9 Compat Modes */
+  src: url('SF/SF-UI-Display-Bold/SF-UI-Display-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('SF/SF-UI-Display-Bold/SF-UI-Display-Bold.woff') format('woff'), /* Modern Browsers */
+       url('SF/SF-UI-Display-Bold/SF-UI-Display-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('SF/SF-UI-Display-Bold/SF-UI-Display-Bold.svg#c20550008ec581b18034198aedd4ef80') format('svg'); /* Legacy iOS */
+  font-style:   normal;
+  font-weight:  700;
+}
+@font-face {
+  font-family: 'SF UI Display Light';
+  src: url('SF/SF-UI-Display-Light/SF-UI-Display-Light.eot'); /* IE9 Compat Modes */
+  src: url('SF/SF-UI-Display-Light/SF-UI-Display-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('SF/SF-UI-Display-Light/SF-UI-Display-Light.woff') format('woff'), /* Modern Browsers */
+       url('SF/SF-UI-Display-Light/SF-UI-Display-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('SF/SF-UI-Display-Light/SF-UI-Display-Light.svg#992f7f964919ca564457458f3b04ba35') format('svg'); /* Legacy iOS */
+  font-style:   normal;
+  font-weight:  200;
+}
+@font-face {
+  font-family: 'SF UI Display Regular';
+  src: url('SF/SF-UI-Display-Regular/SF-UI-Display-Regular.eot'); /* IE9 Compat Modes */
+  src: url('SF/SF-UI-Display-Regular/SF-UI-Display-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('SF/SF-UI-Display-Regular/SF-UI-Display-Regular.woff') format('woff'), /* Modern Browsers */
+       url('SF/SF-UI-Display-Regular/SF-UI-Display-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('SF/SF-UI-Display-Regular/SF-UI-Display-Regular.svg#5342a8609bcd812e22b7e0403a5ccc30') format('svg'); /* Legacy iOS */
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'SF UI Display Thin';
+  src: url('SF/SF-UI-Display-Thin/SF-UI-Display-Thin.eot'); /* IE9 Compat Modes */
+  src: url('SF/SF-UI-Display-Thin/SF-UI-Display-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('SF/SF-UI-Display-Thin/SF-UI-Display-Thin.woff') format('woff'), /* Modern Browsers */
+       url('SF/SF-UI-Display-Thin/SF-UI-Display-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('SF/SF-UI-Display-Thin/SF-UI-Display-Thin.svg#9cbc0a271b522634852b696027a32a9b') format('svg'); /* Legacy iOS */
+  font-style:   normal;
+  font-weight:  200;
+}

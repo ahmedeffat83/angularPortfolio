@@ -1,0 +1,40 @@
+<div class="portfolioWrapper">
+    <div>
+        Intro about my work expeirence and development envirenoments
+    </div>
+
+    <div>
+        <projects-dir data="projects"></projects-dir>
+
+
+        <ul class="projects">
+            <li ng-repeat="project in projects" class="project flexHorizontal row" ng-class-odd="'odd'" ng-class-even="'even'">
+                <div class="col col-md-5 introContainer">
+                    <div>
+                        <div>
+                            {{project.title}}
+                        </div>
+                        <div>
+                            {{project.client}}
+                        </div>
+                        <div>
+                            {{project.year}}
+                        </div>
+                        <div>
+                            {{project.output.join(', ')}}
+                        </div>
+                        <div class="rolesContainer">
+                            <tabs-dir data="project.roles"></tabs-dir>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-md-7 sliderContainer"
+                     style="background: #999;">
+                        <slider-dir data="project.slides"></slider-dir>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
