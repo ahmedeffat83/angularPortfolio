@@ -39,10 +39,10 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                 slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
             },
             {
-                title: "Hayati",
-                client: "Dubai healthcare authority",
+                title: "Vodafone onePOS",
+                client: "Vodafone Gernamy",
                 year: "2016",
-                output: ["Hybrid mobile application", "Web application"],
+                output: ["Web application"],
                 roles: {
                     ux: {
                         percentage: 90,
@@ -60,10 +60,10 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                 slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
             },
             {
-                title: "Hayati",
-                client: "Dubai healthcare authority",
-                year: "2016",
-                output: ["Hybrid mobile application", "Web application"],
+                title: "ooredoo Algeria",
+                client: "ooredoo Corporate",
+                year: "2014",
+                output: ["Online portal"],
                 roles: {
                     ux: {
                         percentage: 90,
@@ -81,10 +81,10 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                 slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
             },
             {
-                title: "Hayati",
-                client: "Dubai healthcare authority",
-                year: "2016",
-                output: ["Hybrid mobile application", "Web application"],
+                title: "Incorta",
+                client: "Incorta inc.",
+                year: "2014",
+                output: ["iPad application", "Hybrid Web application"],
                 roles: {
                     ux: {
                         percentage: 50,
@@ -102,10 +102,10 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                 slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
             },
             {
-                title: "Hayati",
-                client: "Dubai healthcare authority",
-                year: "2016",
-                output: ["Hybrid mobile application", "Web application"],
+                title: "CyberBullyRadar",
+                client: "noBullying.com",
+                year: "2013",
+                output: ["Web application"],
                 roles: {
                     ux: {
                         percentage: 70,
@@ -123,9 +123,9 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                 slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
             },
             {
-                title: "Hayati",
-                client: "Dubai healthcare authority",
-                year: "2016",
+                title: "StarWallet",
+                client: "StarWallet inc.",
+                year: "2013",
                 output: ["Hybrid mobile application", "Web application"],
                 roles: {
                     ux: {
@@ -144,10 +144,10 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                 slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
             },
             {
-                title: "Hayati",
-                client: "Dubai healthcare authority",
-                year: "2016",
-                output: ["Hybrid mobile application", "Web application"],
+                title: "Vodafone Egypt",
+                client: "Vodafone Egypt",
+                year: "2012",
+                output: ["Online portal"],
                 roles: {
                     ux: {
                         percentage: 65,
@@ -165,10 +165,10 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                 slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
             },
             {
-                title: "Hayati",
-                client: "Dubai healthcare authority",
-                year: "2016",
-                output: ["Hybrid mobile application", "Web application"],
+                title: "Government.ae",
+                client: "UAE Government",
+                year: "2011",
+                output: ["Online portal"],
                 roles: {
                     ux: {
                         percentage: 80,
@@ -181,27 +181,6 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                     fe: {
                         percentage: 40,
                         roleSet: ["nodeJs", "ionic"]
-                    }
-                },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
-            },
-            {
-                title: "Hayati",
-                client: "Dubai healthcare authority",
-                year: "2016",
-                output: ["Hybrid mobile application", "Web application"],
-                roles: {
-                    ux: {
-                        percentage: 60,
-                        roleSet: ["ux"]
-                    },
-                    ui: {
-                        percentage: 40,
-                        roleSet: ["photoshop", "illustrator"]
-                    },
-                    fe: {
-                        percentage: 50,
-                        roleSet: ["angularJs", "nodeJs"]
                     }
                 },
                 slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]

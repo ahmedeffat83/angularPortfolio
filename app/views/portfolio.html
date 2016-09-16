@@ -12,16 +12,16 @@
                 <div class="col col-md-5 introContainer">
                     <div>
                         <div>
-                            {{project.title}}
+                            <h2>{{project.title}}</h2>
                         </div>
                         <div>
-                            {{project.client}}
+                            <label>Client:</label> {{project.client}}
                         </div>
                         <div>
                             {{project.year}}
                         </div>
                         <div>
-                            {{project.output.join(', ')}}
+                            <label>Output:</label> {{project.output.join(', ')}}
                         </div>
                         <div class="rolesContainer">
                             <tabs-dir data="project.roles"></tabs-dir>
