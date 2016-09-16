@@ -8,7 +8,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                 title: "Tifli",
                 client: "Dubai healthcare authority",
                 year: "2016",
-                output: ["Mobile application"],
+                output: ["Hybrid mobile application"],
                 roles: {
                     ux: {
                         percentage: 60,
@@ -19,13 +19,13 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["photoshop", "illustrator"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
             },
             {
                 title: "Hayati",
                 client: "Dubai healthcare authority",
                 year: "2016",
-                output: ["Hybrid mobile application", "Web application"],
+                output: ["Hybrid mobile application"],
                 roles: {
                     ux: {
                         percentage: 80,
@@ -36,10 +36,10 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
             },
             {
-                title: "Vodafone onePOS",
+                title: "OnePOS",
                 client: "Vodafone Gernamy",
                 year: "2016",
                 output: ["Web application"],
@@ -57,11 +57,11 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
             },
             {
-                title: "ooredoo Algeria",
-                client: "ooredoo Corporate",
+                title: "ooredoo.dz",
+                client: "ooredoo corporate",
                 year: "2014",
                 output: ["Online portal"],
                 roles: {
@@ -78,9 +78,9 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
             },
-            {
+            /*{
                 title: "Incorta",
                 client: "Incorta inc.",
                 year: "2014",
@@ -99,11 +99,11 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
-            },
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+            },*/
             {
-                title: "CyberBullyRadar",
-                client: "noBullying.com",
+                title: "HeadsUP",
+                client: "Treze Technology inc.",
                 year: "2013",
                 output: ["Web application"],
                 roles: {
@@ -120,11 +120,11 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
             },
             {
                 title: "StarWallet",
-                client: "StarWallet inc.",
+                client: "StarWallet labs",
                 year: "2013",
                 output: ["Hybrid mobile application", "Web application"],
                 roles: {
@@ -141,11 +141,11 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "ionic"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
             },
             {
-                title: "Vodafone Egypt",
-                client: "Vodafone Egypt",
+                title: "Vodafone.com.eg",
+                client: "Vodafone Egypt foundation",
                 year: "2012",
                 output: ["Online portal"],
                 roles: {
@@ -162,7 +162,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
             },
             {
                 title: "Government.ae",
@@ -183,7 +183,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["nodeJs", "ionic"]
                     }
                 },
-                slides: ["ahmed", "mohamed", "abdo", "aziza", "mama", "baba"]
+                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
             }
         ];
 

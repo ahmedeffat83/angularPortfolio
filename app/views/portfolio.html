@@ -1,5 +1,5 @@
 <div class="portfolioWrapper">
-    <div>
+    <div class="portfolioIntro">
         Intro about my work expeirence and development envirenoments
     </div>
 
@@ -18,7 +18,7 @@
                             <label>Client:</label> {{project.client}}
                         </div>
                         <div>
-                            {{project.year}}
+                            <label>Year:</label> {{project.year}}
                         </div>
                         <div>
                             <label>Output:</label> {{project.output.join(', ')}}
@@ -29,8 +29,7 @@
                     </div>
                 </div>
 
-                <div class="col col-md-7 sliderContainer"
-                     style="background: #999;">
+                <div class="col col-md-7 sliderContainer">
                         <slider-dir data="project.slides"></slider-dir>
                 </div>
             </li>
