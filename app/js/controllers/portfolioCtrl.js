@@ -19,7 +19,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["photoshop", "illustrator"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             },
             {
                 title: "Hayati",
@@ -36,7 +36,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             },
             {
                 title: "OnePOS",
@@ -57,7 +57,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             },
             {
                 title: "ooredoo.dz",
@@ -78,7 +78,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             },
             /*{
                 title: "Incorta",
@@ -99,7 +99,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             },*/
             {
                 title: "HeadsUP",
@@ -120,7 +120,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             },
             {
                 title: "StarWallet",
@@ -141,7 +141,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "ionic"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             },
             {
                 title: "Vodafone.com.eg",
@@ -162,7 +162,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["angularJs", "nodeJs", "ionic"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             },
             {
                 title: "Government.ae",
@@ -183,7 +183,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout',
                         roleSet: ["nodeJs", "ionic"]
                     }
                 },
-                slides: ["src-1", "src-2", "src-3", "src-4", "src-5", "src-6"]
+                slides: ["a", "b", "c", "d", "e"]
             }
         ];
 

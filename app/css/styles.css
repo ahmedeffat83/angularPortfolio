@@ -67,8 +67,6 @@ h1, h2, h3, h4, h5, h6 {
 .navLogo {
     display: block;
     text-indent: -9999px;
-    text-align: left;
-    direction: ltr;
     width: 40px;
     height: 40px;
     background-image: url(../img/bg/navLogo.svg);
@@ -166,9 +164,9 @@ h1, h2, h3, h4, h5, h6 {
 .sliderContainer {
     position: relative;
     padding: 0;
-    background: -webkit-linear-gradient(240deg,  #014cc9, #46278e); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(-150deg,  #014cc9,#46278e); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
+    /*background: -webkit-linear-gradient(240deg,  #014cc9, #46278e); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(-150deg,  #014cc9,#46278e); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+    Background-color: rgba(0,0,0, 0.5);
 }
 .sliderContainer .slides > ul {
     height: 100%;
@@ -184,7 +182,52 @@ h1, h2, h3, h4, h5, h6 {
 .sliderContainer .pages {
     position: absolute;
     bottom: 0;
+    padding-bottom: 15px;
+    width:100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.sliderContainer .pages > li {
+    padding: 5px;
+    text-indent: -9999px;
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    box-sizing: initial;
+    cursor: pointer;
+}
+.sliderContainer .pages > li:after,
+.sliderContainer .pages > li:before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    display: block;
+    background-color: rgba(255,255,255, 0.75);
+    top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+.sliderContainer .pages > li.active:after {
+    background-color: rgba(255,110,10, 1);
+}
+.sliderContainer .pages > li:before {
+    background-color: unset;
+    border: solid 2.5px rgba(255,110,10, 0);
+}
+.sliderContainer .pages > li.active:before {
+    width: 24px;
+    height: 24px;
+    border: solid 2.5px rgba(255,110,10, 0.5);
 }
 
 .projects > li .introContainer {}
@@ -244,6 +287,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-border-radius: 1000px;
     background-color: rgba(0,0,0, 0.1);
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     -webkit-justify-content: center;
     align-items: center;
