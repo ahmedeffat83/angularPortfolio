@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     /*background: -webkit-linear-gradient(240deg,  #014cc9, #46278e); !* Chrome10-25,Safari5.1-6 *!
     background: linear-gradient(-150deg,  #014cc9,#46278e); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    Background-color: rgba(0,0,0, 0.5);
+    Background-color: rgba(0,0,0, 0.25);
 }
 .sliderContainer .slides > ul {
     height: 100%;
@@ -263,13 +263,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /************************************************************/
 /***** tabs directive ***************************************/
-.tabs {
+.tabs,
+.introTabs {
     display: flex;
     margin-top: 30px;
     margin-bottom: 15px;
     border-bottom: 1px solid rgba(0,0,0, 0.15);
 }
-.tabs > li {
+.tabs > li,
+.introTabs > li {
     padding: 0 7.5px;
     position: relative;
     overflow: hidden;
@@ -280,7 +282,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -7.5px;
 }
 .tabs > li > a,
-.tabs > li > a > .indicator {
+.tabs > li > a > .indicator,
+.introTabs > li > div {
     width: 50px;
     height: 50px;
     border-radius: 1000px;
@@ -299,7 +302,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.25s;
     -webkit-transition: all 0.25s;
 }
-.tabs > li > a > i {
+.tabs > li > a > i,
+.introTabs > li > div > i {
     position: absolute;
     z-index: 1;
     font-size: 18px;
@@ -344,4 +348,47 @@ h1, h2, h3, h4, h5, h6 {
 .tabs > li.active:after {
     -webkit-transform: translate(-50%, 1px);
     transform: translate(-50%, 1px);
+}
+
+
+
+.introRoles {
+    margin-top: 90px;
+}
+.introRoles h1,
+.introRoles label {
+    margin-bottom: 0;
+    font-size: 28px;
+    font-family: "SF UI Display Light";
+    color: rgba(0,0,0, 0.5);
+}
+.introRoles label {
+    padding-top: 15px;
+    font-size: 18px;
+    color: rgba(0,0,0, 0.5);
+}
+.introTabs {
+    margin-bottom: 0;
+    border-bottom: none;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.introTabs > li {
+    padding: 0 10.75px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+ }
+.introTabs > li > div {
+    width: 75px;
+    height: 75px;
+    cursor: default;
+    background-color: rgba(0,0,0, 0.5);
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.introTabs > li > div > i {
+    font-size: 27px;
+    color: rgba(255,255,255, 0.95);
 }
