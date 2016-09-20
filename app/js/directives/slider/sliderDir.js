@@ -59,6 +59,10 @@ portfolio.directive('sliderDir', function ($timeout) {
                     })
 
 
+
+
+            }). then(function() {
+
             })
         }
     }

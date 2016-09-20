@@ -26,6 +26,9 @@ var portfolio = angular.module('portfolio', ['ui.router'])
 		url: '/contact',
 		templateUrl: './views/contact.html',
 		controller: 'contactCtrl'
-	})
+	});
+
+	//$locationProvider.html5Mode(true);
+
 }])
 	

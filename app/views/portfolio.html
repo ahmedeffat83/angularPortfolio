@@ -1,8 +1,8 @@
-<div class="portfolioWrapper">
+<div class="portfolioWrapper viewWrapper">
     <div class="portfolioIntro">
-        Intro about my work expeirence and development envirenoments
+        <p class="heading">Intro about my work expeirence and development envirenoments</p>
         <div class="introRoles">
-            <h1>My roles per each project below are demonstrated by my contribution in:</h1>
+            <h1>My responsibilities per each project below are demonstrated by my contribution in:</h1>
             <ul class="introTabs">
                 <li class="ux">
                     <div>
@@ -26,37 +26,8 @@
         </div>
     </div>
 
-    <div>
         <projects-dir data="projects"></projects-dir>
 
-
-        <ul class="projects">
-            <li ng-repeat="project in projects" class="project flexHorizontal row" ng-class-odd="'odd'" ng-class-even="'even'">
-                <div class="col col-md-5 introContainer">
-                    <div>
-                        <div>
-                            <h2>{{project.title}}</h2>
-                        </div>
-                        <div>
-                            <label>Client:</label> {{project.client}}
-                        </div>
-                        <div>
-                            <label>Year:</label> {{project.year}}
-                        </div>
-                        <div>
-                            <label>Output:</label> {{project.output.join(', ')}}
-                        </div>
-                        <div class="rolesContainer">
-                            <tabs-dir data="project.roles"></tabs-dir>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col col-md-7 sliderContainer">
-                        <slider-dir data="project.slides"></slider-dir>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <p class="heading aboveFooter">More projects and work samples are available upon request</p>
 
 </div>

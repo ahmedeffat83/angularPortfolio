@@ -10,7 +10,8 @@
     }
 
 
-    .contentWrapper {
+    .contentWrapper {}
+    .viewWrapper {
         padding-top: 80px;
     }
 
