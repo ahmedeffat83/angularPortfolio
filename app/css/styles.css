@@ -479,7 +479,7 @@ p.heading.aboveFooter {
     color: rgba(0,0,0, 0.6);
 }
 .footerNav > li a.cv > i {
-    margin-right: 10px;
+    margin-right: 7.5px;
 }
 .footerNav > li a:hover {
     color: rgba(255,110,10, 1);
@@ -491,6 +491,7 @@ p.heading.aboveFooter {
 .footerCopyright {
     color: rgba(255,255,255, 0.3);
     font-size: 16px;
+    font-family: "SF UI Display Thin";
 }
 
 
