@@ -455,7 +455,7 @@ p.heading.aboveFooter {
     padding: 0 7.5px;
 }
 .footerNav > li a {
-    padding: 0 25px;
+    padding: 0 45px;
     height: 50px;
     border-radius: 1000px;
     -webkit-border-radius: 1000px;
@@ -474,8 +474,10 @@ p.heading.aboveFooter {
 }
 .footerNav > li a.cv {
     border-color: transparent;
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(255,255,255, 0.9);
     color: rgba(0,0,0, 0.6);
+    font-family: "geog-sbit";
+    text-transform: uppercase;
 }
 .footerNav > li a.cv > i {
     margin-right: 7.5px;
@@ -485,6 +487,9 @@ p.heading.aboveFooter {
 }
 .footerNav > li a.social:hover {
     border-color: rgba(255,110,10, 1);
+}
+.footerNav > li a.cv:hover {
+    background-color: rgba(255,255,255, 1);
 }
 
 /*.footerCopyright {
