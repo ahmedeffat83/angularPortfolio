@@ -425,7 +425,7 @@ p.heading.aboveFooter {
     background-image: linear-gradient(-150deg, #07b5d0, #39f2c0);
 }
 .footerContainer {
-    padding: 15px;
+    padding: 75px 15px;
     text-align: center;
     background-color: rgba(0,0,0, 0.75);
 }
@@ -443,8 +443,8 @@ p.heading.aboveFooter {
     font-size: 18px;
     line-height: normal;
 }
-.footerNav,
-.footerCopyright {
+.footerNav/*,
+.footerCopyright*/ {
     display: flex;
     display: -webkit-flex;
     justify-content: center;
@@ -487,12 +487,12 @@ p.heading.aboveFooter {
     border-color: rgba(255,110,10, 1);
 }
 
-.footerCopyright {
+/*.footerCopyright {
     color: rgba(255,255,255, 0.3);
     font-size: 16px;
     font-family: "SF UI Display Thin";
-    margin-top: 60px;
-}
+    margin-top: 30px;
+}*/
 
 
 
