@@ -1,5 +1,5 @@
 <ul class="projects">
-    <li ng-repeat="project in data" class="project flexHorizontal row" ng-class-odd="'odd'" ng-class-even="'even'">
+    <li ng-repeat="project in data track by $index" class="project flexHorizontal row animateEle" ng-class-odd="'odd'" ng-class-even="'even'">
         <div class="col col-md-5 introContainer">
             <div>
                 <div>

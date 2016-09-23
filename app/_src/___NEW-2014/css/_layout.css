@@ -1,0 +1,330 @@
+@charset "utf-8";
+html {
+	overflow:hidden;}
+body {
+	background:#fff;
+	color:#222;
+	font-size:15px;
+	font-family:"geog-mdit";
+	/*font-family:Arial, Helvetica, sans-serif;*/
+	line-height:22px;
+	/*text-transform:uppercase;*/
+	letter-spacing:1px;
+	word-spacing:1px;
+	overflow:hidden;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, param, embed, table, span, img, a, br {
+	margin:0;
+	padding:0;
+	vertical-align:top;
+	outline:none;
+	border:none;
+	text-align:left; }
+table {
+	width:100%; }
+table tr th, table tr td {
+	vertical-align:top; }
+a, a:hover, a:visited {
+	text-decoration:none;
+	outline:none;
+	display:inline-block;
+	color:#FF002A; 
+	-webkit-transition: all .20s ease-out;
+    -moz-transition: all .20s ease-out;
+    -o-transition: all .20s ease-out;
+    transition: all .20s ease-out;}
+a:hover, a:focus, a:active {
+	color:#008390; }
+ul {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	list-style:none;}
+li {
+	list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+	line-height:normal;
+	margin:0;
+	display:block;
+	padding:0;
+	font-size:18px;
+	font-weight:bold;
+	font-family:"geog-sbit";
+	letter-spacing:2px;
+	color:#FF002A;
+	text-transform:uppercase;}
+h2 {
+font-size:16px;
+	margin:0 0 6px 0;}
+h3 {
+	margin:0 0 4px 0; 
+	font-size:14px;
+	color:#333;}
+p {
+	display:block;
+	overflow:hidden;
+	margin:0 0 10px 0; }
+p.last {
+	margin:0;}
+::selection, ::-moz-selection {
+	background:#3fd9e1;
+	color:#fff;
+	text-shadow:none;}
+div {
+	display:block;}
+/************************************************************/
+/************************************************************/
+/************************************************************/	
+.bodyWrapper {
+	overflow:auto;}
+.bodyWrapper > div { 
+	position:relative;
+	overflow:hidden;}
+
+.landingWrapper {
+	height:620px; /**********/
+	background:#f8f8f8 url(../imgs/bg/landingWrapperBG_textured.png) repeat 0 0;
+	border-bottom:#000 solid 1px;}
+.portfolioWrapper {
+	height:2400px; /**********/
+	background:#00646e url(../imgs/bg/pattern-body.png) repeat 0 0;
+	/*background:#0C2452 url(../imgs/bg/portfolioWrapperBG.png) repeat 0 0;*/}	
+/************************************************************/
+/************************************************************/
+/************************************************************/	
+span.heading {
+	font-size:15px;
+	font-family:"geog-mdit";
+	/*letter-spacing:1px;*/
+	display:inline;
+	color:#ff002a;}
+span.numeric {
+	display:inline;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	font-style:italic;
+	letter-spacing:1px;}
+/************************************************************/
+/************************************************************/
+/************************************************************/
+.centerAbsoluteContainer {
+	position:absolute;
+	width:980px;
+	overflow:hidden;
+	display:block;
+	padding:50px 0 0 0;}
+.centerAbsoluteContainer > * {
+	margin:0 auto 20px auto;}
+.centerAbsoluteContainer > *.last {
+	margin:0 auto;}
+/************************************************************/
+/************************************************************/
+/************************************************************/
+.landingWrapper > div {
+	padding:80px 0 0 0;}
+.landingWrapper > div > div.first	{
+	margin:0 auto 40px auto;}
+.landingWrapper > div > div.first > * {
+	text-align:center;}	
+.landingWrapper > div h1 {
+	font-family:"geog-sbit";
+	color:#00a2b1;
+	line-height:42px;
+	font-size:55px;
+	text-transform:uppercase;
+	letter-spacing:10px;
+	margin:0 0 35px 0;
+	-moz-text-shadow:0px 1px 0px #fff;
+	-webkit-text-shadow:0px 1px 0px #fff;
+	text-shadow:0px 1px 0px #fff;
+	overflow:hidden;}
+	
+.landingWrapper > div h2 {
+	font-family:"geog-sbit";
+	font-size:16px;
+	letter-spacing:2px;
+	color:#333;
+	overflow:hidden;
+	line-height:15px;
+	text-transform:none;
+	text-transform:uppercase;
+	margin:0;}
+	
+.disclaimerContainer h3 {
+	color:#ff002a;
+	margin:0 0 4px 0;
+	font-size:14px;}
+
+.bioContainer, .disclaimerContainer {
+	display:block;
+	overflow:hidden;
+	background:#fffefa;
+	width:780px;
+	padding:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:#ccc solid 1px;
+	border-width:0 1px 1px 0;}
+.disclaimerContainer {
+	background:#fffae2;
+	width:959px;
+	border:#f5d9b0 solid 1px;
+	border-width:0 1px 1px 0;}
+.disclaimerContainer > div > div {
+	padding:10px;}
+.bioContainer > div {
+	/*padding:0 0 0 160px;
+	background:url(../imgs/bg/ahmed-abdelhady.png) no-repeat 0 0;
+	height:160px;*/
+	overflow:hidden;}
+.bioContainer > div > div {
+	padding:10px 10px 10px 10px;}
+	
+/************************************************************/
+/************************************************************/
+/************************************************************/
+div.portfolioHeaderContainer {
+	display:block;
+	overflow:hidden;
+	margin-bottom:10px;}	
+div.portfolioHeaderContainer > div {
+	float:left;
+	left:50%;
+	clear:left;
+	position:relative;}
+div.portfolioHeaderContainer > div > h1 {
+	font-family:"geog-sb";
+	color:#fff;
+	line-height:normal;
+	font-size:42px;
+	text-transform:uppercase;
+	letter-spacing:4px;
+	-moz-text-shadow:0px -1px 0px #000;
+	-webkit-text-shadow:0px -1px 0px #000;
+	text-shadow:0px -1px 0px #000;
+	float:left;
+	right:50%;
+	position:relative;}
+div.portfolioHeaderContainer > div > h1 > span {
+	display:block;
+	cursor:default;
+	background:#ff002a;
+	padding:20px 30px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:#43000b solid 1px;
+	border-width:1px 0 0 1px;}
+.portfolioWrapper > div > .disclaimerContainer {
+	margin:0 auto 10px auto;
+	background:#FFFEFA;
+	width:760px;}
+/************************************************************/
+/************************************************************/
+/************************************************************/
+ul.mainItemsList {
+	width:980px;
+	overflow:hidden;
+	display:block;}
+ul.mainItemsList > li {
+	float:left;
+	width:485px;
+	display:inline-block;
+	margin:0 10px 0 0;}
+ul.mainItemsList > li.last {
+	float:right;
+	margin:0;}
+ul.mainItemsList > li > ul > li {
+	 display:block;
+	 overflow:hidden;
+	 margin:0 0 10px 0;
+	 width:485px;}
+ul.mainItemsList > li > ul > li.last {
+	margin:0;}
+ul.mainItemsList > li > ul > li > div {
+	 float:right;
+	 display:inline-block;}
+ul.mainItemsList > li.last > ul > li > div {
+	 float:left;}
+	
+ul.mainItemsList > li > ul > li > div > div {
+	background:#fff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:15px;
+	border:#000 solid 1px;
+	border-width:0 1px 1px 0;}
+	
+ul.mainItemsList > li > ul > li > div > div > div.first {
+	border:#999 solid 2px; /**********/
+	/*-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;*/
+	display:block;
+	overflow:hidden;
+	margin:0 0 15px 0;
+	width:450px;
+	height:244px;}
+ul.mainItemsList > li > ul > li > div > div > div > img {
+	width:450px;}
+	
+	
+ul.mainItemsList > li > ul > li > div > div > div.last {}
+ul.mainItemsList > li > ul > li > div > div > div.last > * {
+	margin:0 0 10px 0;}
+ul.mainItemsList > li > ul > li > div > div > div.last > *.first {
+	margin:0 0 6px 0;}
+ul.mainItemsList > li > ul > li > div > div > div.last > *.last {
+	margin:0;}
+/************************************************************/
+/************************************************************/
+/************************************************************/
+.fixedNav {
+	position:fixed !important;
+	bottom:0px;
+	left:0px;
+	display:block;
+	width:100%;
+	background:#000;
+	/*border:#FF002A solid 1px;
+	border-width:2px 0 0 0;*/
+	
+	-webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.2);
+	-ms-box-shadow: 0 -2px 0 rgba(0,0,0,0.2);
+	-o-box-shadow: 0 -2px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 -2px 0 rgba(0,0,0,0.2);}
+.fixedNav > ul > li {
+	margin:0 5px 0 0;
+	float:left;
+	display:inline-block;}
+	
+.fixedNav > ul > li > a {
+	/*display:inline-block;
+	padding:8px 16px 8px 16px;
+	background:#ff002a;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:#43000B solid 1px;
+	border-width:1px 0 0 1px;*/
+	color:#fff;
+	/*-moz-text-shadow:-1px -1px 0px #940018;
+	-webkit-text-shadow:-1px -1px 0px #940018;
+	text-shadow:-1px -1px 0px #940018;
+	font-size:14px;
+	font-weight:bold;
+	font-family:'geog-sb';
+	letter-spacing:2px;
+	text-transform:uppercase;*/}
+.fixedNav > ul > li > a:hover {
+	/*background:#333;
+	border:#000 solid 1px;
+	border-width:1px 0 0 1px;
+	color:#fff;
+	-moz-text-shadow:-1px -1px 0px #000;
+	-webkit-text-shadow:-1px -1px 0px #000;
+	text-shadow:-1px -1px 0px #000;*/}
+	

@@ -1,8 +1,9 @@
 <div>
     <div class="slides">
         <ul>
-            <li ng-repeat="slide in data" class="slide">
-                {{slide}}
+            <li ng-repeat="slide in data track by $index" class="slide">
+                <!--{{slide}}-->
+                <img ng-src="{{slide}}"/>
             </li>
         </ul>
 

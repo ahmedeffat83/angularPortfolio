@@ -1,4 +1,5 @@
-portfolio.directive('headerDir', function ($timeout) {
+portfolio.directive('headerDir',
+    function ($timeout, portfolioSrvc) {
     return {
         restrict: 'EA',
         replace: false,
@@ -9,11 +10,7 @@ portfolio.directive('headerDir', function ($timeout) {
             //console.log("header directive");
 
             $(element).find(".headerWrapper a").click(function(){
-                $("html, body").stop().animate({scrollTop: 0},
-                    {
-                        duration: 250,
-                        easing: "swing"
-                    });
+                portfolioSrvc.scrollTo(0, 500);
             })
         }
     }

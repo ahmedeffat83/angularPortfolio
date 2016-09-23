@@ -1,4 +1,5 @@
-portfolio.directive('sliderDir', function ($timeout) {
+portfolio.directive('sliderDir',
+    function ($timeout, portfolioSrvc) {
     return {
         restrict: 'EA',
         replace: false,
@@ -42,6 +43,8 @@ portfolio.directive('sliderDir', function ($timeout) {
                         pauseOnHover: true,
                         startPaused: true*/
                     });
+
+                    sly.on('load', function () {});
 
                     var setSliderHeight = function() {
                         var ratio = 0.625,

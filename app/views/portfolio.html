@@ -1,5 +1,5 @@
 <div class="portfolioWrapper viewWrapper">
-    <div class="portfolioIntro">
+    <div class="intro fadeEle">
         <p class="heading">Intro about my work expeirence and development envirenoments</p>
         <div class="introRoles">
             <h1>My responsibilities per each project below are demonstrated by my contribution in:</h1>
@@ -24,10 +24,13 @@
                 </li>
             </ul>
         </div>
+        <div class="scrollerConatiner">
+            <a class="scroller" ng-if="scroller" ng-click="slideDown()"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
     </div>
 
-        <projects-dir data="projects"></projects-dir>
+        <projects-dir data="projects" class="projectsWrapper"></projects-dir>
 
-    <p class="heading aboveFooter">More projects and work samples are available upon request</p>
+    <p class="heading aboveFooter animateEle">More projects and work samples are available upon request</p>
 
 </div>

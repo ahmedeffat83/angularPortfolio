@@ -1,4 +1,5 @@
-portfolio.directive('footerDir', function ($timeout) {
+portfolio.directive('footerDir',
+    function ($timeout, portfolioSrvc) {
     return {
         restrict: 'EA',
         replace: false,
@@ -8,13 +9,10 @@ portfolio.directive('footerDir', function ($timeout) {
         link: function ($scope, element, attrs) {
             //console.log("header directive");
 
-            $(element).find(".headerWrapper a").click(function(){
-                $("html, body").stop().animate({scrollTop: 0},
-                    {
-                        duration: 250,
-                        easing: "swing"
-                    });
-            })
+            $timeout(function () {
+                portfolioSrvc.appear();
+            });
+
         }
     }
 });

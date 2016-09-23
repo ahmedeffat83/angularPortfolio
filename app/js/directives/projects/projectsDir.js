@@ -1,4 +1,5 @@
-portfolio.directive('projectsDir', function ($timeout) {
+portfolio.directive('projectsDir',
+    function ($timeout, portfolioSrvc) {
     return {
         restrict: 'EA',
         replace: false,
@@ -11,7 +12,7 @@ portfolio.directive('projectsDir', function ($timeout) {
             //console.log("header directive");
 
             $timeout(function () {
-
+                portfolioSrvc.appear();
             });
 
         }
