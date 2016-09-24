@@ -1,5 +1,5 @@
-portfolio.directive('sliderDir',
-    function ($timeout, portfolioSrvc) {
+karakeeb.directive('sliderDir',
+    function ($timeout, karakeebSrvc) {
     return {
         restrict: 'EA',
         replace: false,

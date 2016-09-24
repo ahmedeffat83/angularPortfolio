@@ -1,5 +1,5 @@
-portfolio.directive('footerDir',
-    function ($timeout, portfolioSrvc) {
+karakeeb.directive('footerDir',
+    function ($timeout, karakeebSrvc) {
     return {
         restrict: 'EA',
         replace: false,
@@ -10,7 +10,7 @@ portfolio.directive('footerDir',
             //console.log("header directive");
 
             $timeout(function () {
-                portfolioSrvc.appear();
+                karakeebSrvc.appear();
             });
 
         }

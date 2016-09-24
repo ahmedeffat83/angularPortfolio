@@ -1,4 +1,4 @@
-portfolio.directive('tabsDir', function ($timeout) {
+karakeeb.directive('tabsDir', function ($timeout) {
     return {
         restrict: 'EA',
         replace: false,

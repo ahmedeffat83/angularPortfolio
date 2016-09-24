@@ -1,4 +1,4 @@
-portfolio.service('portfolioSrvc', ['$rootScope',
+angular.module('karakeeb').service('karakeebSrvc', ['$rootScope',
     function($rootScope) {
         'use strict';
 

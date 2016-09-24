@@ -1,5 +1,5 @@
-portfolio.controller('experienceCtrl', ['$scope', '$state', 'portfolioSrvc',
-    function($scope, $state, portfolioSrvc){
+angular.module('karakeeb').controller('experienceCtrl', ['$scope', '$state', 'karakeebSrvc',
+    function($scope, $state, karakeebSrvc){
 
         'use strict';
 

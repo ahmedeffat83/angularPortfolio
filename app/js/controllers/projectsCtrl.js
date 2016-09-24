@@ -1,5 +1,5 @@
-portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout', 'portfolioSrvc',
-    function($scope, $state, $timeout, portfolioSrvc){
+angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$timeout', 'karakeebSrvc',
+    function($scope, $state, $timeout, karakeebSrvc){
 
         'use strict';
 
@@ -193,7 +193,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout', 'portfoli
 
 
         // defaults
-        portfolioSrvc.appear();
+        karakeebSrvc.appear();
         $scope.scroller = true;
         fillViewport();
 
@@ -221,7 +221,7 @@ portfolio.controller('portfolioCtrl', ['$scope', '$state', '$timeout', 'portfoli
         };
 
         $scope.slideDown = function() {
-            portfolioSrvc.scrollTo($(".projectsWrapper").offset().top - 80, 500);
+            karakeebSrvc.scrollTo($(".projectsWrapper").offset().top - 80, 500);
         }
 
         $(window).resize(function(){
