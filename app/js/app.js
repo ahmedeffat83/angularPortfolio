@@ -51,4 +51,18 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 	//$locationProvider.html5Mode(true);
 
 }])
+	.run(function($rootScope, $timeout){
+		$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+			if (toState.resolve) {
+				$rootScope.loader = true;
+			}
+		});
+		$rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+			if (toState.resolve) {
+				$timeout(function() {
+					$rootScope.loader = false;
+				}, 1000);
+			}
+		});
+	});
 	

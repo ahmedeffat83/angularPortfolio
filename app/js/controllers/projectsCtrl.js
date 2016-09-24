@@ -193,7 +193,7 @@ angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$tim
 
 
         // defaults
-        karakeebSrvc.appear();
+        //karakeebSrvc.appear();
         $scope.scroller = true;
         fillViewport();
 
