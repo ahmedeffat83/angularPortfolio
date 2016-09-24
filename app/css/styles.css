@@ -460,10 +460,11 @@ p.heading.aboveFooter {
     -webkit-justify-content: center;
 }
 .introTabs > li {
-    padding: 0 10.75px;
+    padding: 0 10px;
     padding-bottom: 0;
     margin-bottom: 0;
     text-align: center;
+    width: 150px;
  }
 .introTabs > li > div {
     width: 75px;

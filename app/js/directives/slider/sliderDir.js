@@ -64,8 +64,6 @@ karakeeb.directive('sliderDir',
 
 
 
-            }). then(function() {
-
             })
         }
     }

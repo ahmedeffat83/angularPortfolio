@@ -23,10 +23,11 @@ karakeeb.directive('tabsDir', function ($timeout) {
 
                 $(element).find(".indicator").each(function() {
                     var height = $(this).attr("percentage") + "%";
-                    $(this).animate({
-                        height: height,
-                        //webkitClipPath: 'polygon(50% 5%, 0% 100%, 100% 100%)'
-                    }, 2000, 'easeOutBack')
+                    $(this).bind('appear', function() {
+                        $(this).animate({
+                            height: height
+                        }, 250, 'easeOutBack')
+                    });
                 })
 
             });

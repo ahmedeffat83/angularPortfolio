@@ -9,9 +9,11 @@ karakeeb.directive('headerDir',
         link: function ($scope, element, attrs) {
             //console.log("header directive");
 
-            $(element).find(".headerWrapper a").click(function(){
-                karakeebSrvc.scrollTo(0, 500);
-            })
+            $timeout(function () {
+                $(element).find(".headerWrapper a").click(function () {
+                    karakeebSrvc.scrollTo(0, 500);
+                })
+            });
         }
     }
 });

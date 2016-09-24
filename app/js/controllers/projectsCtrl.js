@@ -194,8 +194,10 @@ angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$tim
 
         // defaults
         //karakeebSrvc.appear();
-        $scope.scroller = true;
-        fillViewport();
+        $timeout(function(){
+            $scope.scroller = true;
+            fillViewport();
+        })
 
 
         // General variables
@@ -215,9 +217,6 @@ angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$tim
                     "margin": 0
                 });
             }
-            /*if(intro_height < standardValue) {
-                $scope.scroller = false;
-            }*/
         };
 
         $scope.slideDown = function() {
