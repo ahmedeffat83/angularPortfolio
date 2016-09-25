@@ -18,7 +18,6 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 					$timeout(function() {
 						deferred.resolve($ocLazyLoad.load('js/controllers/aboutCtrl.js'));
 					}, 500);
-
 					return deferred.promise;
 				}]
 		}
@@ -34,7 +33,6 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 					$timeout(function() {
 						deferred.resolve($ocLazyLoad.load('js/controllers/projectsCtrl.js'));
 					}, 500);
-
 					return deferred.promise;
 				}]
 		}
@@ -50,7 +48,6 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 					$timeout(function() {
 						deferred.resolve($ocLazyLoad.load('js/controllers/experienceCtrl.js'));
 					}, 500);
-
 					return deferred.promise;
 				}]
 		}
@@ -66,7 +63,6 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 				$timeout(function() {
 					deferred.resolve($ocLazyLoad.load('js/controllers/contactCtrl.js'));
 				}, 500);
-
 				return deferred.promise;
 			}]
 		}
@@ -85,7 +81,7 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 			if (toState.resolve) {
 				$timeout(function() {
 					$rootScope.loader = false;
-				}, 500);
+				}, 250);
 			}
 		});
 	});

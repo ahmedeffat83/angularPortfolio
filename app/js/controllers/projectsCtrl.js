@@ -196,43 +196,37 @@ angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$tim
 
 
         // General variables
+        var header_height = $(".headerWrapper").outerHeight();
         function fillViewport() {
             var window_height = window.innerHeight, //$(window).height(); doesn't work
-                header_height = 80,
-                intro_height = $(".intro").outerHeight(), // isn't stable
-                mainBodyContent_YMargin = (window_height - header_height - intro_height) / 2,
-                standardValue = window_height - header_height;
+                intro_height = $(".intro > .introInner").outerHeight() // isn't stable
 
-            //console.log(intro_height);
-
-            if (standardValue > intro_height) {
-                $(".intro").css({
-                    "margin-top": mainBodyContent_YMargin,
-                    "margin-bottom": mainBodyContent_YMargin
-                });
+            if (window_height - header_height > intro_height) {
+                $(".intro")
+                    .css({"height": window_height - header_height})
+                    .addClass("fittedHeight");
             } else {
-                $(".intro").css({
-                    "margin": 0
-                });
+                $(".intro")
+                    .css({"height": "auto"})
+                    .removeClass("fittedHeight");
             }
         };
 
         $scope.slideDown = function() {
-            karakeebSrvc.scrollTo($(".projectsWrapper").offset().top - 80, 500);
+            karakeebSrvc.scrollTo($(".projectsWrapper").offset().top - header_height, 500);
         }
 
         $(window).resize(function(){
+            header_height = $(".headerWrapper").outerHeight();
             fillViewport();
         });
 
 
         // defaults
-        //karakeebSrvc.appear();
-        $scope.init = function() {
+        $timeout(function(){
             $scope.scroller = true;
             fillViewport();
-        }
-        $timeout($scope.init);
+        });
 
 
 }]);
