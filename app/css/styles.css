@@ -578,8 +578,8 @@ p.heading.aboveFooter {
     overflow: hidden;
     z-index: 0;
     opacity: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
     display: flex;
     display: -webkit-flex;
     justify-content: center;

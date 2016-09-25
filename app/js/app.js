@@ -12,9 +12,15 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 		templateUrl: './views/about.html',
 		controller: 'aboutCtrl',
 		resolve: {
-			loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
-				return $ocLazyLoad.load('js/controllers/aboutCtrl.js');
-			}]
+			loadMyCtrl: ['$ocLazyLoad', '$timeout', '$q',
+				function($ocLazyLoad, $timeout, $q) {
+					var deferred = $q.defer();
+					$timeout(function() {
+						deferred.resolve($ocLazyLoad.load('js/controllers/aboutCtrl.js'));
+					}, 500);
+
+					return deferred.promise;
+				}]
 		}
 	})
 	.state('projects', {
@@ -22,9 +28,15 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 		templateUrl: './views/projects.html',
 		controller: 'projectsCtrl',
 		resolve: {
-			loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
-				return $ocLazyLoad.load('js/controllers/projectsCtrl.js');
-			}]
+			loadMyCtrl: ['$ocLazyLoad', '$timeout', '$q',
+				function($ocLazyLoad, $timeout, $q) {
+					var deferred = $q.defer();
+					$timeout(function() {
+						deferred.resolve($ocLazyLoad.load('js/controllers/projectsCtrl.js'));
+					}, 500);
+
+					return deferred.promise;
+				}]
 		}
 	})
 	.state('experience', {
@@ -32,9 +44,15 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 		templateUrl: './views/experience.html',
 		controller: 'experienceCtrl',
 		resolve: {
-			loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
-				return $ocLazyLoad.load('js/controllers/experienceCtrl.js');
-			}]
+			loadMyCtrl: ['$ocLazyLoad', '$timeout', '$q',
+				function($ocLazyLoad, $timeout, $q) {
+					var deferred = $q.defer();
+					$timeout(function() {
+						deferred.resolve($ocLazyLoad.load('js/controllers/experienceCtrl.js'));
+					}, 500);
+
+					return deferred.promise;
+				}]
 		}
 	})
 	.state('contact', {
@@ -42,8 +60,14 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 		templateUrl: './views/contact.html',
 		controller: 'contactCtrl',
 		resolve: {
-			loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
-				return $ocLazyLoad.load('js/controllers/contactCtrl.js');
+			loadMyCtrl: ['$ocLazyLoad', '$timeout', '$q',
+				function($ocLazyLoad, $timeout, $q) {
+				var deferred = $q.defer();
+				$timeout(function() {
+					deferred.resolve($ocLazyLoad.load('js/controllers/contactCtrl.js'));
+				}, 500);
+
+				return deferred.promise;
 			}]
 		}
 	});
@@ -61,7 +85,7 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 			if (toState.resolve) {
 				$timeout(function() {
 					$rootScope.loader = false;
-				}, 1000);
+				}, 500);
 			}
 		});
 	});

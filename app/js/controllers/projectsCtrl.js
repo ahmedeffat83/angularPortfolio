@@ -192,21 +192,19 @@ angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$tim
 
 
 
-        // defaults
-        //karakeebSrvc.appear();
-        $timeout(function(){
-            $scope.scroller = true;
-            fillViewport();
-        })
+
 
 
         // General variables
         function fillViewport() {
             var window_height = window.innerHeight, //$(window).height(); doesn't work
                 header_height = 80,
-                intro_height = $(".intro").outerHeight(),
+                intro_height = $(".intro").outerHeight(), // isn't stable
                 mainBodyContent_YMargin = (window_height - header_height - intro_height) / 2,
                 standardValue = window_height - header_height;
+
+            //console.log(intro_height);
+
             if (standardValue > intro_height) {
                 $(".intro").css({
                     "margin-top": mainBodyContent_YMargin,
@@ -226,6 +224,15 @@ angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$tim
         $(window).resize(function(){
             fillViewport();
         });
+
+
+        // defaults
+        //karakeebSrvc.appear();
+        $scope.init = function() {
+            $scope.scroller = true;
+            fillViewport();
+        }
+        $timeout($scope.init);
 
 
 }]);
