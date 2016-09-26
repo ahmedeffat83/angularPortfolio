@@ -72,16 +72,18 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 
 }])
 	.run(function($rootScope, $timeout){
+		var stateSwitch = null;
 		$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
 			if (toState.resolve) {
+				$timeout.cancel(stateSwitch);
 				$rootScope.loader = true;
 			}
 		});
 		$rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
 			if (toState.resolve) {
-				$timeout(function() {
+				stateSwitch = $timeout(function() {
 					$rootScope.loader = false;
-				}, 250);
+				}, 500);
 			}
 		});
 	});
