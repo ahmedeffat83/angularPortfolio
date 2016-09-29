@@ -28,8 +28,8 @@
       <file leaf-file-name="particlesDir.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/directives/particles/particlesDir.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+            <state relative-caret-position="1043">
+              <caret line="119" column="23" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -656,12 +656,12 @@
       <workItem from="1475101624633" duration="1490000" />
       <workItem from="1475105067014" duration="1148000" />
       <workItem from="1475107174748" duration="250000" />
-      <workItem from="1475152412301" duration="13325000" />
+      <workItem from="1475152412301" duration="13685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174817000" />
+    <option name="totallyTimeSpent" value="175177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1429" height="825" extended-state="0" />
@@ -1026,8 +1026,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/directives/particles/particlesDir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        <state relative-caret-position="1043">
+          <caret line="119" column="23" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
           <folding />
         </state>
       </provider>

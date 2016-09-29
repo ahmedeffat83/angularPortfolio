@@ -78,7 +78,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
                                 rotateY: 1200
                             }
                         }
-                    },
+                    }/*,
                     interactivity: {
                         detect_on: "canvas",
                         events: {
@@ -91,7 +91,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
                                 mode: "push"
                             },
                             resize: !0
-                        }/*,
+                        },
                         modes: {
                             grab: {
                                 distance: 140,
@@ -116,8 +116,8 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
                             remove: {
                                 particles_nb: 2
                             }
-                        }*/
-                    },
+                        }
+                    }*/,
                     retina_detect: !0
                 });
         }
