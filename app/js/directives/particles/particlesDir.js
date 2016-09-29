@@ -13,7 +13,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
                 $window.particlesJS($scope.id, {
                     particles: {
                         number: {
-                            value: 75,
+                            value: 25,
                             density: {
                                 enable: !0,
                                 value_area: 500
@@ -38,7 +38,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
                             }*/
                         },
                         opacity: {
-                            value: .5,
+                            value: .75,
                             random: !1,
                             anim: {
                                 enable: !1,
@@ -59,7 +59,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
                         },
                         line_linked: {
                             enable: !0,
-                            distance: 150,
+                            distance: 500,
                             color: "#fff",
                             opacity: .5,
                             width: 1

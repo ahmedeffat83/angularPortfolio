@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ced5a02-7321-4e4f-9ab4-32130c0d6aba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/controllers/experienceCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/experience.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/styles.css" afterPath="$PROJECT_DIR$/app/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers/aboutCtrl.js" afterPath="$PROJECT_DIR$/app/js/controllers/aboutCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/directives/header/header.html" afterPath="$PROJECT_DIR$/app/js/directives/header/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/about.html" afterPath="$PROJECT_DIR$/app/views/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/directives/particles/particlesDir.js" afterPath="$PROJECT_DIR$/app/js/directives/particles/particlesDir.js" />
     </list>
     <ignored path="angularPrtfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +24,18 @@
     <favorites_list name="angularPrtfolio" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="particlesDir.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/directives/particles/particlesDir.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,12 +91,12 @@
         <option value="$PROJECT_DIR$/app/js/directives/particles/particles.html" />
         <option value="$PROJECT_DIR$/app/js/controllers/projectsCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/projects.html" />
-        <option value="$PROJECT_DIR$/app/js/directives/particles/particlesDir.js" />
         <option value="$PROJECT_DIR$/app/js/controllers/aboutCtrl.js" />
         <option value="$PROJECT_DIR$/app/css/styles.css" />
         <option value="$PROJECT_DIR$/app/views/about.html" />
         <option value="$PROJECT_DIR$/app/js/app.js" />
         <option value="$PROJECT_DIR$/app/js/directives/header/header.html" />
+        <option value="$PROJECT_DIR$/app/js/directives/particles/particlesDir.js" />
       </list>
     </option>
   </component>
@@ -651,16 +656,16 @@
       <workItem from="1475101624633" duration="1490000" />
       <workItem from="1475105067014" duration="1148000" />
       <workItem from="1475107174748" duration="250000" />
-      <workItem from="1475152412301" duration="12807000" />
+      <workItem from="1475152412301" duration="13325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174299000" />
+    <option name="totallyTimeSpent" value="174817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1429" height="825" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24492653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -921,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/directives/particles/particlesDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/controllers/projectsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1023,6 +1020,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/directives/particles/particlesDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding />
         </state>
       </provider>
