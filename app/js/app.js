@@ -37,21 +37,6 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 				}]
 		}
 	})
-	.state('experience', {
-		url: '/experience',
-		templateUrl: './views/experience.html',
-		controller: 'experienceCtrl',
-		resolve: {
-			loadMyCtrl: ['$ocLazyLoad', '$timeout', '$q',
-				function($ocLazyLoad, $timeout, $q) {
-					var deferred = $q.defer();
-					$timeout(function() {
-						deferred.resolve($ocLazyLoad.load('js/controllers/experienceCtrl.js'));
-					}, 500);
-					return deferred.promise;
-				}]
-		}
-	})
 	.state('contact', {
 		url: '/contact',
 		templateUrl: './views/contact.html',
