@@ -2,5 +2,7 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', 'karakee
     function($scope, $state, karakeebSrvc){
 
         'use strict';
+
+
         
 }]);
