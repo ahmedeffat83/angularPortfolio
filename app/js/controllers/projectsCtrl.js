@@ -228,5 +228,4 @@ angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$tim
             fillViewport();
         });
 
-
 }]);

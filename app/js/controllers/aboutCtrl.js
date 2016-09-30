@@ -64,7 +64,10 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
          return window.setTimeout(callback, 1000 / 60);
          }*/
         var animation = function() {
+
+
             var canvas = $('canvas.circles')[0];
+
 
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -127,6 +130,40 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
 
 
         animation();
+
+
+        /*function Animate(id, useTime){
+            var can = document.getElementById(id),
+                ctx = can.getContext('2d'),
+                wid = can.width,
+                hei = can.height,
+                lst = Date.now(),
+                rps = 2*Math.PI,
+                step = rps/60,                       // Expecting 60fps
+                ang = 0;
+
+            (function draw(){
+                var dif = Date.now() - lst;          // Milliseconds since last we drew.
+                lst = Date.now();
+                if (useTime) step = rps * dif/1000;  // Allows for variable fps
+
+                ang += step;                         // Increment our placeholder. In the
+                                                     // case where step is constant, this
+                                                     // ends up looking "slow" when we
+                                                     // have less than 60fps.
+
+                ctx.clearRect(0,0,wid,hei);
+                ctx.beginPath();
+                ctx.arc(wid/2 + Math.cos(ang)*50,hei/2 + Math.sin(ang)*50,
+                    10,0,2*Math.PI);
+                ctx.fill();
+
+                webkitRequestAnimationFrame(draw);
+            })();
+        }
+
+        Animate('can1', false);
+        Animate('can2', true);*/
 
 
 
