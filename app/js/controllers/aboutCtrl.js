@@ -31,19 +31,15 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
             fillViewport();
         });
 
+        $scope.slideDown = function() {
+            karakeebSrvc.scrollTo($(".scrollingTarget").offset().top - header_height, 500);
+        }
 
         // defaults
         $timeout(function(){
             $scope.scroller = true;
             fillViewport();
         });
-
-
-        $scope.slideDown = function() {
-            karakeebSrvc.scrollTo($(".scrollingTarget").offset().top - header_height, 500);
-        }
-
-
 /********** circles **********/
         window.requestAnimFrame = (function(){
             return  window.requestAnimationFrame ||
