@@ -79,6 +79,16 @@ p.heading.aboveFooter {
 .footerNav.fadeEle.appeared {
     transform: scale(1, 1);
 }*/
+
+.typed-cursor {
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
 /************************************************************/
 /***** header directive *************************************/
 /************************************************************/
@@ -693,13 +703,28 @@ canvas.circles {
 
 
 /***** bio *****/
-.bio img {
-    width: 100%;
+.bio {
+    background-color: rgba(255,255,255, 1);
+    display: block;
+}
+.bio .bioImg {
+    background-color: #fafafa;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+.bioImg img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     /*opacity: 0;*/
     -webkit-transition: all 1s;
     transition: all 1s;
 }
-.bio img.loaded {
+.bioImg img.loaded {
     opacity: 1;
     -webkit-transform: scale(1.1, 1.1);
     -moz-transform: scale(1.1, 1.1);
@@ -707,14 +732,8 @@ canvas.circles {
     -o-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
 }
-.typed-cursor {
-    opacity: 1;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    -o-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+.bio .bioContent {
+    padding: 30px;
 }
 
 

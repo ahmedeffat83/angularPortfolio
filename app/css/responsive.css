@@ -56,4 +56,13 @@
         -webkit-border-radius: 0 5px 5px 0;
     }
 
+
+    .bio {
+        display: flex;
+        display: -webkit-flex;
+    }
+    .bio .bioImg {
+        height: auto;
+    }
+
 }
