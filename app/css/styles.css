@@ -56,7 +56,7 @@ p.heading {
     font-size: 76px;
 }
 p.heading.aboveFooter {
-    padding-top: 30px;
+    padding-top: 45px;
     padding-bottom: 60px;
     font-size: 28px;
     font-family: "SF UI Display Thin";
@@ -225,11 +225,11 @@ p.heading.aboveFooter {
 /***** portfolio ********************************************/
 /************************************************************/
 .projects {
-    padding: 15px 0;
+    padding: 7.5px 0;
 }
 .projects > li {
     /*opacity:0.25;*/
-    padding: 15px 0;
+    padding: 7.5px 0;
     margin-left: 0;
     margin-right: 0;
 }

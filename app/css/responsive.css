@@ -45,15 +45,15 @@
         top: 0;
         right: 0;
         bottom: 0;
-        left: 30px;
-        border-radius: 5px 0 0 5px;
-        -webkit-border-radius: 5px 0 0 5px;
+        left: 15px;
+        border-radius: 2.5px 0 0 2.5px;
+        -webkit-border-radius: 2.5px 0 0 2.5px;
     }
     .projects > li.even .introContainer > div {
-        right: 30px;
+        right: 15px;
         left: 0;
-        border-radius: 0 5px 5px 0;
-        -webkit-border-radius: 0 5px 5px 0;
+        border-radius: 0 2.5px 2.5px 0;
+        -webkit-border-radius: 0 2.5px 2.5px 0;
     }
 
 
