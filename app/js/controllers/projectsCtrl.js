@@ -213,7 +213,7 @@ angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$tim
         };
 
         $scope.slideDown = function() {
-            karakeebSrvc.scrollTo($(".projectsWrapper").offset().top - header_height, 500);
+            karakeebSrvc.scrollTo($(".slidingTarget").offset().top - header_height, 500);
         }
 
         $(window).resize(function(){

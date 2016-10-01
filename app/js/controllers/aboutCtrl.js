@@ -3,6 +3,13 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
 
         'use strict';
 
+        $scope.professions = [
+            "Hello, this is the first sentence",
+            "Second sentence",
+            "Final sentence"
+        ]
+
+
         var header_height = $(".headerWrapper").outerHeight();
         function fillViewport() {
             var window_height = window.innerHeight, //$(window).height(); doesn't work
@@ -36,11 +43,12 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
         });
 
 
+        $scope.slideDown = function() {
+            karakeebSrvc.scrollTo($(".slidingTarget").offset().top - header_height, 500);
+        }
 
 
-
-
-
+/********** circles **********/
         window.requestAnimFrame = (function(){
             return  window.requestAnimationFrame ||
                 window.webkitRequestAnimationFrame ||
@@ -60,9 +68,6 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                 window.msCancelRequestAnimationFrame     ||
                 clearTimeout
         } )();
-        /*var requestAnimationFrame = function(callback){
-         return window.setTimeout(callback, 1000 / 60);
-         }*/
         var animation = function() {
 
 
@@ -72,16 +77,15 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
 
-            var ctx = canvas.getContext("2d");
-            var circles = [];
+            var ctx = canvas.getContext("2d"),
+                circles = [],
+                w = canvas.width,
+                h = canvas.height,
+                opacity = 1,
+                radius = 1,
+                gap = 10,
+                rps = Math.PI * 2
 
-            var w = canvas.width;
-            var h = canvas.height;
-            var centerW = canvas.width*0.675;
-
-            var opacity = 1;
-            var radius = 1;
-            var gap = 10;
             while (opacity > 0) {
                 circles.push({
                     radius: radius,
@@ -94,15 +98,16 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
 
             var drawCircles = function() {
                 requestAnimationFrame(drawCircles);
-
                 var smallestCircle = 0;
+
+
 
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 for (var i = circles.length-1; i >= 0; i--) {
                     var circle = circles[i];
 
                     ctx.beginPath();
-                    ctx.arc(centerW, h * 0.5, circle.radius, Math.PI * 2, 0, true);
+                    ctx.arc(w * 0.5, h * 0, circle.radius, rps , 0, true);
                     ctx.lineWidth = 1;
                     ctx.strokeStyle = 'rgba(255, 255, 255, ' + circle.opacity + ')';
                     ctx.stroke();
@@ -128,44 +133,10 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
             requestAnimationFrame(drawCircles);
         }
 
-
         animation();
 
-
-        /*function Animate(id, useTime){
-            var can = document.getElementById(id),
-                ctx = can.getContext('2d'),
-                wid = can.width,
-                hei = can.height,
-                lst = Date.now(),
-                rps = 2*Math.PI,
-                step = rps/60,                       // Expecting 60fps
-                ang = 0;
-
-            (function draw(){
-                var dif = Date.now() - lst;          // Milliseconds since last we drew.
-                lst = Date.now();
-                if (useTime) step = rps * dif/1000;  // Allows for variable fps
-
-                ang += step;                         // Increment our placeholder. In the
-                                                     // case where step is constant, this
-                                                     // ends up looking "slow" when we
-                                                     // have less than 60fps.
-
-                ctx.clearRect(0,0,wid,hei);
-                ctx.beginPath();
-                ctx.arc(wid/2 + Math.cos(ang)*50,hei/2 + Math.sin(ang)*50,
-                    10,0,2*Math.PI);
-                ctx.fill();
-
-                webkitRequestAnimationFrame(draw);
-            })();
-        }
-
-        Animate('can1', false);
-        Animate('can2', true);*/
-
-
-
-
+        // $(window).resize(function(){
+        //     animation();
+        // });
+/********** ENDOF: circles **********/
     }]);

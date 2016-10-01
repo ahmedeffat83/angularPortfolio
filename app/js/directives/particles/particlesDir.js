@@ -7,8 +7,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
             class: "@"
         },
         template: '<div id="id" class="class"></div>',
-        link: function(scope, element, attrs) {
-            $scope = scope;
+        link: function($scope, element, attrs) {
 
                 $window.particlesJS($scope.id, {
                     particles: {
