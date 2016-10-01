@@ -52,6 +52,7 @@ p.heading.aboveFooter {
     padding-bottom: 60px;
     font-size: 28px;
     font-family: "SF UI Display Thin";
+    text-align: center;
 }
 
 
@@ -312,13 +313,11 @@ p.heading.aboveFooter {
 
 
 .projects > li .introContainer {
-    padding: 0 15px;
+    padding: 0;
 }
 
 .projects > li .introContainer > div {
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
 }
 /************************************************************/
 /************************************************************/
