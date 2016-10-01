@@ -26,10 +26,6 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
             }
         };
 
-        $scope.slideDown = function() {
-            karakeebSrvc.scrollTo($(".projectsWrapper").offset().top - header_height, 500);
-        }
-
         $(window).resize(function(){
             header_height = $(".headerWrapper").outerHeight();
             fillViewport();
@@ -44,7 +40,7 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
 
 
         $scope.slideDown = function() {
-            karakeebSrvc.scrollTo($(".slidingTarget").offset().top - header_height, 500);
+            karakeebSrvc.scrollTo($(".scrollingTarget").offset().top - header_height, 500);
         }
 
 
