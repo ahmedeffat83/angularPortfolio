@@ -15,18 +15,14 @@
         padding-top: 80px;
     }
 
-    .projects > li .introContainer {
-        padding: 0;
-    }
-
 }
 
 @media (min-width: 992px) {
 
-    .flexHorizontal {
-        -ms-box-orient: horizontal;
-        display: -webkit-box;
+    .flex-box {
+        display: -webkit-flex;
         display: flex;
+        -ms-box-orient: horizontal;
         flex-direction: row;
     }
 
@@ -36,33 +32,63 @@
     }
 
 
-    .projects > li .introContainer {
+    .sections > .section .wide {
         position: relative;
     }
 
-    .projects > li .introContainer > div {
+    .sections.aboutContent > .section:nth-child(even),
+    .sections.projects > .section:nth-child(odd) {
+        flex-direction: row;
+    }
+    .sections.aboutContent > .section:nth-child(odd),
+    .sections.projects > .section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .sections.aboutContent > .section .wide {
+        padding: 0 15px;
+    }
+    .sections.aboutContent > .section .wide > div {
+        margin-left: -15px;
+    }
+    .sections.aboutContent > .section:nth-child(even) .wide > div {
+        margin-left: initial;
+        margin-right: -15px;
+    }
+    .sections.aboutContent > .section .wide > div,
+    .sections.projects > .section .tight > div {
+        border-radius: 2.5px 0 0 2.5px;
+        -webkit-border-radius: 2.5px 0 0 2.5px;
+    }
+    .sections.aboutContent > .section:nth-child(odd) .wide > div,
+    .sections.projects > .section:nth-child(even) .tight > div {
+        border-radius: 0 2.5px 2.5px 0;
+        -webkit-border-radius: 0 2.5px 2.5px 0;
+    }
+
+    .bio {
+        flex-direction: row;
+    }
+    .bio .bioImg {
+        height: initial;
+    }
+    .bio .bioImg {
+        order: initial;
+    }
+    .bio .bioContent {
+        order: initial;
+    }
+
+
+    .sections.projects > .section .tight > div {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 15px;
-        border-radius: 2.5px 0 0 2.5px;
-        -webkit-border-radius: 2.5px 0 0 2.5px;
     }
-    .projects > li.even .introContainer > div {
+    .sections.projects > .section:nth-child(even) .tight > div {
         right: 15px;
         left: 0;
-        border-radius: 0 2.5px 2.5px 0;
-        -webkit-border-radius: 0 2.5px 2.5px 0;
-    }
-
-
-    .bio {
-        display: flex;
-        display: -webkit-flex;
-    }
-    .bio .bioImg {
-        height: auto;
     }
 
 }

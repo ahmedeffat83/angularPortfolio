@@ -98,6 +98,14 @@ p.heading.aboveFooter {
     -o-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    -ms-box-orient: vertical;
+    flex-direction: column;
+}
+
 /************************************************************/
 /***** header directive *************************************/
 /************************************************************/
@@ -224,29 +232,45 @@ p.heading.aboveFooter {
 /************************************************************/
 /***** portfolio ********************************************/
 /************************************************************/
-.projects {
+.sections {
     padding: 7.5px 0;
 }
-.projects > li {
-    /*opacity:0.25;*/
+.sections > .section {
     padding: 7.5px 0;
     margin-left: 0;
     margin-right: 0;
 }
-.projects > li:first-child {
-    opacity:1;
+
+.sections > .section .wide {
+    padding: 0;
 }
-.projects > li.odd {
-    flex-direction: row;
+.sections > .section .tight {
+    background-color: #fafafa;
 }
-.projects > li.even {
-    flex-direction: row-reverse;
+
+.sections > .section .wide > div {
+    padding: 30px;
+    background-color: rgba(255,255,255, 1);
+}
+
+
+
+.sections.projects > .section .tight.introContainer {
+    padding: 0;
+    background-color: transparent;
+}
+.sections.projects > .section .tight.introContainer > div {
+    padding: 30px;
+    background-color: rgba(255,255,255, 1);
+}
+
+.sections.projects > .section .wide > div {
+    padding: 0;
+    background-color: transparent;
 }
 
 .sliderContainer {
     position: relative;
-    padding: 0;
-    /*Background-color: rgba(0,0,0, 0.25);*/
     Background-color: #fafafa;
 }
 .sliderContainer .slides > ul {
@@ -309,23 +333,6 @@ p.heading.aboveFooter {
     width: 24px;
     height: 24px;
     border: solid 2.5px rgba(255,110,10, 0.5);
-}
-
-.projects > li .introContainer {}
-
-.projects > li .introContainer > div {
-    padding: 30px;
-    background-color: rgba(255,255,255, 1);
-}
-.projects > li.even .introContainer > div {}
-
-
-.projects > li .introContainer {
-    padding: 0;
-}
-
-.projects > li .introContainer > div {
-    background-color: rgba(255, 255, 255, 1);
 }
 /************************************************************/
 /************************************************************/
@@ -720,15 +727,15 @@ canvas.circles {
 
 
 /***** bio *****/
-.bio {
-    background-color: rgba(255,255,255, 1);
-}
 .bio .bioImg {
-    background-color: #fafafa;
     padding: 0;
     overflow: hidden;
     position: relative;
     height: 400px;
+    order: 1;
+}
+.bio .bioContent {
+    order: 2;
 }
 .bioImg img {
     position: absolute;
@@ -748,13 +755,8 @@ canvas.circles {
     -o-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
 }
-.bio .bioContent {
-    padding: 30px;
-}
-/***** skills *****/
+/***** expertise *****/
 .expertise {
-    background-color: #eaeaea;
-    height: 400px;
 }
 
 

@@ -1,6 +1,6 @@
-<ul class="projects">
-    <li ng-repeat="project in data track by $index" class="project flexHorizontal row animateEle" ng-class-odd="'odd'" ng-class-even="'even'">
-        <div class="col col-md-5 introContainer">
+<ul class="projects sections">
+    <li ng-repeat="project in data track by $index" class="project section flex-box animateEle" ng-class-odd="'odd'" ng-class-even="'even'">
+        <div class="col col-md-5 tight introContainer">
             <div>
                 <div>
                     <h2>{{project.title}}</h2>
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="col col-md-7 sliderContainer">
+        <div class="col col-md-7 wide sliderContainer">
             <slider-dir data="project.slides"></slider-dir>
         </div>
     </li>
