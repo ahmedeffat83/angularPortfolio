@@ -39,6 +39,7 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
         $timeout(function(){
             $scope.scroller = true;
             fillViewport();
+            karakeebSrvc.appear();
         });
 /********** circles **********/
         window.requestAnimFrame = (function(){
