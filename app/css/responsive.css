@@ -1,5 +1,20 @@
 @media (min-width: 768px) {
 
+
+    .animate-h.side-right {
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+    .animate-y.appeared,
+    .animate-h.appeared,
+    .animate-fade.appeared {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    
+
     .headerContainer {
         padding: 0 45px;
         height: 80px;
@@ -13,6 +28,57 @@
     .contentWrapper {}
     .viewWrapper {
         padding-top: 80px;
+    }
+
+
+    .year .yearTitle {
+        text-align: center;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+    }
+    .yearDetails {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .yearDetails:before {
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+    }
+    .yearDetails > .position {
+        width: 50%;
+        float: left;
+        clear: left;
+        display: inline-block;
+    }
+
+    .yearDetails > .position > div {
+        float: right;
+        clear: right;
+    }
+    .yearDetails > .position.side-left {}
+    .yearDetails > .position.side-right {
+        float: right;
+        clear: right;
+    }
+    .yearDetails > .position.side-right > div {
+        margin-right: 0;
+        margin-left: 15px;
+        float: left;
+        clear: left;
+        border-radius: 0 2.5px 2.5px 2.5px;
+        -webkit-border-radius: 0 2.5px 2.5px 2.5px;
+    }
+
+    .yearDetails > .position.side-right:after {
+        top: 7.5px;
+        right: auto;
+        left: 0;
+        background-image: url(../img/bg/positionArrow-right.svg);
+    }
+    .yearDetails > .position.push {
+        margin-top: 30px;
     }
 
 }
@@ -89,6 +155,11 @@
     .sections.projects > .section:nth-child(even) .tight > div {
         right: 15px;
         left: 0;
+    }
+
+    .yearDetails {
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
 }

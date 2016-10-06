@@ -1,12 +1,13 @@
 <div class="aboutWrapper viewWrapper">
     <div class="intro">
         <div class="introInner">
-            <p class="heading">Ahmed Abdelhady</p>
-            <div class="introRoles">
+            <div>My name is</div>
+            <h1 class="heading">Ahmed Abdelhady</h1>
+            <div>I am a</div>
+            <h2 class="roles">
                 <typed-dir strings="professions"></typed-dir>
-                <h1>Well known online under Karakeeb.me</h1>
-
-            </div>
+            </h2>
+            <div>Well known online under Karakeeb.me</div>
         </div>
         <div class="scrollerConatiner">
             <a class="scroller" ng-if="scroller" ng-click="slideDown()"><i class="fa fa-angle-down"
@@ -17,10 +18,10 @@
     </div>
 
     <div class="scrollingTarget sections aboutContent">
-        <div class="bio flex-box section animateEle">
+        <div class="bio flex-box section animate-y">
             <div class="col col-md-7 wide bioContent">
                 <div>
-                    <h2>A little bit about me .. </h2>
+                    <!--<h2>A little bit about me .. </h2>-->
                     <p>
                         Sitting somewhere between the conceptual and practical, my focus is on the pervasive Internet
                         and emerging technology. I’ve worked for the largest companies in the world, the smallest
@@ -42,11 +43,11 @@
             </div>
         </div>
 
-        <div class="expertise flex-box section animateEle">
+        <!--<div class="expertise flex-box section animateEle">
             <div class="col col-md-7 wide">
                 <div>
-                    <h1>skills</h1>
-                    <ul>
+                    <h2>Skills</h2>
+                    &lt;!&ndash;<ul>
                         <li>
                             Utilizing User-Centred Design (UCD) principles and accessibility compliance.
                         </li>
@@ -74,11 +75,39 @@
                         <li>Delivering Cross-Browser/Platform compatible websites and web-based applications.</li>
                         <li>Accommodating Responsive design approaches across a wide range of devices.
                         </li>
-                    </ul>
+                    </ul>&ndash;&gt;
                 </div>
             </div>
             <div class="col col-md-5 tight">
-                tools
+                <h2>tools</h2>
+            </div>
+        </div>-->
+    </div>
+    <div class="historyContainer">
+        <div class="history">
+            <!--<particles-dir id="portfolioParticles" class="particlesCanvas"></particles-dir>-->
+            <div class="timeline">
+                <div class="year" ng-repeat="year in timeline">
+                    <div class="yearTitle animate-fade">
+                        <div>{{year.title}}</div>
+                    </div>
+                    <div class="yearDetails clearfix">
+                        <div ng-repeat="position in year.positions"
+                             class="position side-{{position.alignment}} animate-h"
+                             ng-class="{'push': position.push}">
+                            <div>
+                                <div>{{position.data.name}}</div>
+                                <div>{{position.data.profession}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="year">
+                    <div class="yearTitle animate-fade">
+                        <div>2006</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

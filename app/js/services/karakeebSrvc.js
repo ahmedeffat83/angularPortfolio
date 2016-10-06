@@ -11,7 +11,7 @@ angular.module('karakeeb').service('karakeebSrvc', ['$rootScope',
         }
 
         this.appear = function(){
-            $(".animateEle, .fadeEle").bind('appear', function() {
+            $(".animate-y, .animate-fade, .animate-h").bind('appear', function() {
                 $(this).addClass("appeared");
             });
         }

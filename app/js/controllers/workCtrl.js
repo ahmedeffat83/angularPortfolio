@@ -1,4 +1,4 @@
-angular.module('karakeeb').controller('projectsCtrl', ['$scope', '$state', '$timeout', 'karakeebSrvc',
+angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout', 'karakeebSrvc',
     function($scope, $state, $timeout, karakeebSrvc){
 
         'use strict';

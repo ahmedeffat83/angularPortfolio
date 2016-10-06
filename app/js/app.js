@@ -22,16 +22,16 @@ var karakeeb = angular.module('karakeeb', ['ui.router', 'oc.lazyLoad'])
 				}]
 		}
 	})
-	.state('projects', {
-		url: '/projects',
-		templateUrl: './views/projects.html',
-		controller: 'projectsCtrl',
+	.state('work', {
+		url: '/work',
+		templateUrl: './views/work.html',
+		controller: 'workCtrl',
 		resolve: {
 			loadMyCtrl: ['$ocLazyLoad', '$timeout', '$q',
 				function($ocLazyLoad, $timeout, $q) {
 					var deferred = $q.defer();
 					$timeout(function() {
-						deferred.resolve($ocLazyLoad.load('js/controllers/projectsCtrl.js'));
+						deferred.resolve($ocLazyLoad.load('js/controllers/workCtrl.js'));
 					}, 500);
 					return deferred.promise;
 				}]

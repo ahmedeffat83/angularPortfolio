@@ -4,12 +4,63 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
         'use strict';
 
         $scope.professions = [
-            "Hello, this is the first sentence",
-            "Second sentence",
-            "Final sentence"
+            "Experience strategist (UX)",
+            "Interaction designer (IxD)",
+            "Service designer",
+            "Information architect (IA)",
+            "Visual Design director",
+            "Front-End lead developer",
+            "Mobile, Social and Semantic Web consultant"
         ]
 
-
+        $scope.timeline = [
+            {
+                title: "2016",
+                positions: [
+                    {
+                        data: {
+                            name: "IBM",
+                            profession: "Usability/UX consultant",
+                            role: "Full time",
+                            start: "April 2016",
+                            end: "To date"
+                        },
+                        category: "job",
+                        alignment: "left",
+                        push: false
+                    }
+                ]
+            },
+            {
+                title: "2015",
+                positions: [
+                    {
+                        data: {
+                            name: "Vodafone Germany",
+                            profession: "Usability/UX consultant",
+                            role: "Full time",
+                            start: "April 2016",
+                            end: "To date"
+                        },
+                        category: "job",
+                        alignment: "left",
+                        push: false
+                    },
+                    {
+                        data: {
+                            name: "iHorizons",
+                            profession: "Usability/UX consultant",
+                            role: "Full time",
+                            start: "April 2016",
+                            end: "To date"
+                        },
+                        category: "job",
+                        alignment: "right",
+                        push: true
+                    }
+                ]
+            }
+        ]
         var header_height = $(".headerWrapper").outerHeight();
         function fillViewport() {
             var window_height = window.innerHeight, //$(window).height(); doesn't work
