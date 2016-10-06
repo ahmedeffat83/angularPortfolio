@@ -19,7 +19,9 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                 positions: [
                     {
                         data: {
-                            name: "IBM",
+                            name: "IBM MEA",
+                            logo: "./img/timeline/ibm.png",
+                            location: "Giza, Egypt",
                             profession: "Usability/UX consultant",
                             role: "Full time",
                             start: "April 2016",
@@ -37,7 +39,9 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                     {
                         data: {
                             name: "Vodafone Germany",
-                            profession: "Usability/UX consultant",
+                            logo: "./img/timeline/vodafone.png",
+                            location: "Düsseldorf, Germany",
+                            profession: "UX/Front-End lead developer",
                             role: "Full time",
                             start: "April 2016",
                             end: "To date"
@@ -48,15 +52,126 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                     },
                     {
                         data: {
-                            name: "iHorizons",
-                            profession: "Usability/UX consultant",
+                            name: "iHorizons Egyptِ",
+                            logo: "./img/timeline/ihorizons.png",
+                            location: "Cairo, Egypt",
+                            profession: "UX/Front-End lead developer",
                             role: "Full time",
-                            start: "April 2016",
-                            end: "To date"
+                            start: "January 2015",
+                            end: "July 2015"
                         },
                         category: "job",
                         alignment: "right",
                         push: true
+                    }
+                ]
+            },
+            {
+                title: "2014",
+                positions: [
+                    {
+                        data: {
+                            name: "Incorta Egypt",
+                            logo: "",
+                            location: "Cairo, Egypt",
+                            profession: "UX/Front-End designer",
+                            role: "Part time",
+                            start: "May 2014",
+                            end: "December 2014"
+                        },
+                        category: "job",
+                        alignment: "left",
+                        push: false
+                    }
+                ]
+            },
+            {
+                title: "2013",
+                positions: [
+                    {
+                        data: {
+                            name: "ITWorx",
+                            logo: "",
+                            location: "Cairo, Egypt",
+                            profession: "Interaction designer",
+                            role: "Full time",
+                            start: "February 2016",
+                            end: "June 2014"
+                        },
+                        category: "job",
+                        alignment: "left",
+                        push: false
+                    },
+                    {
+                        data: {
+                            name: "StarWallet Inc.",
+                            logo: "./img/timeline/starwallet.png",
+                            location: "Cairo, Egypt",
+                            profession: "UX Researcher",
+                            role: "Part time",
+                            start: "April 2013",
+                            end: "March 2014"
+                        },
+                        category: "job",
+                        alignment: "right",
+                        push: true
+                    }
+                ]
+            },
+            {
+                title: "2011",
+                positions: [
+                    {
+                        data: {
+                            name: "Vodafone Egypt",
+                            logo: "./img/timeline/vodafone.png",
+                            location: "Giza, Egypt",
+                            profession: "Interaction designer",
+                            role: "Full time",
+                            start: "June 2011",
+                            end: "January 2013"
+                        },
+                        category: "job",
+                        alignment: "left",
+                        push: false
+                    }
+                ]
+            },
+            {
+                title: "2009",
+                positions: [
+                    {
+                        data: {
+                            name: "Asset Technology Group",
+                            logo: "",
+                            location: "Cairo, Egypt",
+                            profession: "Interaction designer",
+                            role: "Full time",
+                            start: "August 2009",
+                            end: "May 2011"
+                        },
+                        category: "job",
+                        alignment: "left",
+                        push: false
+                    }
+                ]
+            },
+            {
+                title: "2007",
+                positions: [
+                    {
+                        data: {
+                            name: "Elmotaheda Web",
+                            logo: "",
+                            location: "Cairo, Egypt",
+                            profession: "UX/Interactive/Front-End developer",
+                            role: "Full time",
+                            start: "January 2007",
+                            end: "July 2009"
+                        },
+                        category: "job",
+                        alignment: "left",
+                        push: false
                     }
                 ]
             }

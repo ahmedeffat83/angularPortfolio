@@ -96,8 +96,22 @@
                              class="position side-{{position.alignment}} animate-h"
                              ng-class="{'push': position.push}">
                             <div>
-                                <div>{{position.data.name}}</div>
-                                <div>{{position.data.profession}}</div>
+                                <div class="positionHead">
+                                    <div>
+                                        <div class="logo">
+                                            <img ng-src="{{position.data.logo}}" />
+                                        </div>
+                                    </div>
+                                    <div class="header">
+                                        <div>{{position.data.name}}</div>
+                                        <div>{{position.data.location}}</div>
+                                        <div>{{position.data.start}} - {{position.data.end}}</div>
+                                    </div>
+                                </div>
+                                <div class="positionBody">
+                                    <div>{{position.data.profession}} {{position.data.role}}</div>
+                                </div>
+
                             </div>
                         </div>
 
@@ -105,7 +119,9 @@
                 </div>
                 <div class="year">
                     <div class="yearTitle animate-fade">
-                        <div>2006</div>
+                        <div>
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>

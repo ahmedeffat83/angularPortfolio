@@ -13,7 +13,7 @@
         transform: translate(0, 0);
     }
 
-    
+
 
     .headerContainer {
         padding: 0 45px;
@@ -78,7 +78,7 @@
         background-image: url(../img/bg/positionArrow-right.svg);
     }
     .yearDetails > .position.push {
-        margin-top: 30px;
+        margin-top: 22.5px;
     }
 
 }
@@ -158,8 +158,8 @@
     }
 
     .yearDetails {
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
 
 }

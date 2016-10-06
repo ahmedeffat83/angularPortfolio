@@ -789,7 +789,7 @@ canvas.circles {
     z-index: 1;
 }
 .year .yearTitle {
-    padding: 7.5px 30px;
+    padding: 7.5px 15px;
     text-align: right;
     text-align: -webkit-right;
     text-align: -moz-right;
@@ -820,8 +820,8 @@ canvas.circles {
 }
 .yearDetails {
     position: relative;
-    padding: 22.5px 30px;
-    padding-right: 67.5px;
+    padding: 7.5px 15px;
+    padding-right: 52.5px;
 }
 .yearDetails:before {
     content: "";
@@ -833,7 +833,7 @@ canvas.circles {
     top: 0;
     bottom: 0;
     left: auto;
-    right: 67.5px;
+    right: 52.5px;
     transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     z-index: 0;
@@ -867,6 +867,29 @@ canvas.circles {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
+}
+.positionHead > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.positionHead > div.header {
+    padding: 0 15px;
+}
+.positionHead  .logo {
+    width: 75px;
+    height: 75px;
+    display: block;
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    background-color: #fafafa;
+    border: rgba(0,0,0, 0.1) solid 1px;
+    overflow: hidden;
+}
+.positionHead  .logo > img {
+    width: 100%;
+}
+.positionBody {
+    padding-top: 30px;
 }
 
 
