@@ -19,7 +19,7 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                 positions: [
                     {
                         data: {
-                            name: "IBM MEA",
+                            name: "IBM Middle East & Africa",
                             logo: "./img/timeline/ibm.png",
                             location: "Giza, Egypt",
                             profession: "Usability/UX consultant",
@@ -176,6 +176,12 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                 ]
             }
         ]
+
+
+
+
+
+
         var header_height = $(".headerWrapper").outerHeight();
         function fillViewport() {
             var window_height = window.innerHeight, //$(window).height(); doesn't work
@@ -192,14 +198,17 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
             }
         };
 
-        $(window).resize(function(){
-            header_height = $(".headerWrapper").outerHeight();
-            fillViewport();
-        });
+
+
 
         $scope.slideDown = function() {
             karakeebSrvc.scrollTo($(".scrollingTarget").offset().top - header_height, 500);
         }
+
+        $(window).resize(function(){
+            header_height = $(".headerWrapper").outerHeight();
+            fillViewport();
+        });
 
         // defaults
         $timeout(function(){
@@ -207,8 +216,14 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
             fillViewport();
             karakeebSrvc.appear();
         });
+        $scope.init = function() {}
+
+
+
+
+
 /********** circles **********/
-        window.requestAnimFrame = (function(){
+        /*window.requestAnimFrame = (function(){
             return  window.requestAnimationFrame ||
                 window.webkitRequestAnimationFrame ||
                 window.mozRequestAnimationFrame    ||
@@ -292,7 +307,7 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
             requestAnimationFrame(drawCircles);
         }
 
-        animation();
+        animation();*/
 
         // $(window).resize(function(){
         //     animation();

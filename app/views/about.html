@@ -1,10 +1,11 @@
 <div class="aboutWrapper viewWrapper">
-    <div class="intro">
+    <div class="intro inner-red">
+        <!--<particles-dir id="particles" class="particlesCanvas"></particles-dir>-->
         <div class="introInner">
             <div>My name is</div>
             <h1 class="heading">Ahmed Abdelhady</h1>
             <div>I am a</div>
-            <h2 class="roles">
+            <h2>
                 <typed-dir strings="professions"></typed-dir>
             </h2>
             <div>Well known online under Karakeeb.me</div>
@@ -14,78 +15,90 @@
                                                                            aria-hidden="true"></i></a>
         </div>
 
-        <canvas class="circles"></canvas>
+        <!--<canvas class="circles"></canvas>-->
     </div>
 
-    <div class="scrollingTarget sections aboutContent">
-        <div class="bio flex-box section animate-y">
-            <div class="col col-md-7 wide bioContent">
-                <div>
-                    <!--<h2>A little bit about me .. </h2>-->
-                    <p>
-                        Sitting somewhere between the conceptual and practical, my focus is on the pervasive Internet
-                        and emerging technology. I’ve worked for the largest companies in the world, the smallest
-                        startups, and everything in between: helping them develop products, services and communications
-                        that combine networked software with the physical world in ways that make sense.
-                    </p>
-                    <p>
-                        I have a unique business sense out of my major academic studies, combined with a natural talent
-                        and full crowded 9+ years of hands-on commercial experience.
-                    </p>
-                    <!--<p>
-                        Specialties: Experience strategy (UX), Interaction Design (IxD), Service Design, Information Architecture (IA), Visual design direction, Front-End Development direction and Mobile, Social and Semantic Web.
-                    </p>-->
-                    <a class="cv"><i class="fa fa-download" aria-hidden="true"></i><span>Download Resume</span></a>
+    <div class="scrollingTarget inner-darkBlue">
+        <h1 class="heading">Hey ..</h1>
+        <div class="sections aboutContent">
+            <div class="bio flex-box section animate-y">
+                <div class="col col-md-7 wide bioContent">
+                    <div>
+                        <h2>A little bit about me .. </h2>
+                        <p>
+                            Sitting somewhere between the conceptual and practical, my focus is on the pervasive
+                            Internet
+                            and emerging technology. I’ve worked for the largest companies in the world, the smallest
+                            startups, and everything in between: helping them develop products, services and
+                            communications
+                            that combine networked software with the physical world in ways that make sense.
+                        </p>
+                        <p>
+                            I have a unique business sense out of my major academic studies, combined with a natural
+                            talent
+                            and full crowded 9+ years of hands-on commercial experience.
+                        </p>
+                        <!--<p>
+                            Specialties: Experience strategy (UX), Interaction Design (IxD), Service Design, Information Architecture (IA), Visual design direction, Front-End Development direction and Mobile, Social and Semantic Web.
+                        </p>-->
+                        <div class="cvContainer">
+                            <a class="cv inner-orange">
+                                <div class="linkContent">
+                                    <i class="fa fa-download" aria-hidden="true"></i><span>Download  my resume</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-5 tight bioImg">
+                    <img ng-src="./img/bio.png"/>
                 </div>
             </div>
-            <div class="col col-md-5 tight bioImg">
-                <img ng-src="./img/bio.png"/>
+
+            <div class="expertise flex-box section animateEle">
+                <div class="col col-md-7 wide">
+                    <div>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>
+                                Utilizing User-Centred Design (UCD) principles and accessibility compliance.
+                            </li>
+                            <li>Translating the business requirements and user needs into a consistent and positive
+                                User Experience by conducting Research Interviews with Stakeholders and Target
+                                Audiences.
+                            </li>
+                            <li>Illustrating positive User/Customer Experience (UX/CX) through delivering User
+                                Journeys, Personas, Sketches, Mockups, high and low fidelity Wireframes and
+                                Sitemaps.
+                            </li>
+                            <li>Validating outputs using: Card Sorting, User Researches, In-Person Usability
+                                Testing and other methods.
+                            </li>
+                            <li>Developing Information Architecture (IA) and basic taxonomies.</li>
+                            <li>Creating detailed, annotated Interaction Design (IxD) schematics for internal team
+                                members and clients.
+                            </li>
+                            <li>Single-Page Application (SPA) Development and Interaction processes leading.</li>
+                            <li>Constructing interactive, clear, usable, and pixel-perfect web-based prototypes using
+                                HTML[5], CSS[3] and JavaScript, with Search Engine Optimization (SEO) principles
+                                in mind.
+                            </li>
+                            <li>Performing heuristic evaluations of websites and mobile applications.</li>
+                            <li>Delivering Cross-Browser/Platform compatible websites and web-based applications.</li>
+                            <li>Accommodating Responsive design approaches across a wide range of devices.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-md-5 tight">
+                    <h2></h2>
+                </div>
             </div>
         </div>
-
-        <!--<div class="expertise flex-box section animateEle">
-            <div class="col col-md-7 wide">
-                <div>
-                    <h2>Skills</h2>
-                    &lt;!&ndash;<ul>
-                        <li>
-                            Utilizing User-Centred Design (UCD) principles and accessibility compliance.
-                        </li>
-                        <li>Translating the business requirements and user needs into a consistent and positive
-                            User Experience by conducting Research Interviews with Stakeholders and Target
-                            Audiences.
-                        </li>
-                        <li>Illustrating positive User/Customer Experience (UX/CX) through delivering User
-                            Journeys, Personas, Sketches, Mockups, high and low fidelity Wireframes and
-                            Sitemaps.
-                        </li>
-                        <li>Validating outputs using: Card Sorting, User Researches, In-Person Usability
-                            Testing and other methods.
-                        </li>
-                        <li>Developing Information Architecture (IA) and basic taxonomies.</li>
-                        <li>Creating detailed, annotated Interaction Design (IxD) schematics for internal team
-                            members and clients.
-                        </li>
-                        <li>Single-Page Application (SPA) Development and Interaction processes leading.</li>
-                        <li>Constructing interactive, clear, usable, and pixel-perfect web-based prototypes using
-                            HTML[5], CSS[3] and JavaScript, with Search Engine Optimization (SEO) principles
-                            in mind.
-                        </li>
-                        <li>Performing heuristic evaluations of websites and mobile applications.</li>
-                        <li>Delivering Cross-Browser/Platform compatible websites and web-based applications.</li>
-                        <li>Accommodating Responsive design approaches across a wide range of devices.
-                        </li>
-                    </ul>&ndash;&gt;
-                </div>
-            </div>
-            <div class="col col-md-5 tight">
-                <h2>tools</h2>
-            </div>
-        </div>-->
     </div>
-    <div class="historyContainer">
+    <div class="historyContainer inner-lime">
         <div class="history">
-            <!--<particles-dir id="portfolioParticles" class="particlesCanvas"></particles-dir>-->
+            <h1 class="heading">Employment history</h1>
             <div class="timeline">
                 <div class="year" ng-repeat="year in timeline">
                     <div class="yearTitle animate-fade">
@@ -99,7 +112,7 @@
                                 <div class="positionHead">
                                     <div>
                                         <div class="logo">
-                                            <img ng-src="{{position.data.logo}}" />
+                                            <img ng-src="{{position.data.logo}}"/>
                                         </div>
                                     </div>
                                     <div class="header">

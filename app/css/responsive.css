@@ -81,6 +81,16 @@
         margin-top: 22.5px;
     }
 
+
+    .bio .bioContent .cv {
+        width: 60%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
 }
 
 @media (min-width: 992px) {

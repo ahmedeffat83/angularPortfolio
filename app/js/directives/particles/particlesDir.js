@@ -6,7 +6,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
             id : "@",
             class: "@"
         },
-        template: '<div id="id" class="class"></div>',
+        /*template: '<div id="id" class="class"></div>',*/
         link: function($scope, element, attrs) {
 
                 $window.particlesJS($scope.id, {
@@ -77,7 +77,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
                                 rotateY: 1200
                             }
                         }
-                    }/*,
+                    },
                     interactivity: {
                         detect_on: "canvas",
                         events: {
@@ -116,7 +116,7 @@ karakeeb.directive('particlesDir', function ($timeout, $window) {
                                 particles_nb: 2
                             }
                         }
-                    }*/,
+                    },
                     retina_detect: !0
                 });
         }

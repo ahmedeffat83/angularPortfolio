@@ -9,7 +9,6 @@
 }
 
 body {
-    background-color: rgba(255,110,10, 1);
     position: relative;
 }
 body {
@@ -51,22 +50,26 @@ p {
 p:last-child {
     margin-bottom: 0;
 }
-p.heading {
+h1.heading {
     padding: 0;
     margin: 0;
-    line-height: normal;
     display: block;
     color: rgba(255,255,255, 1);
-    font-family: "SF UI Display Bold";
-    font-size: 76px;
+    font-family: "MuseoSans_xFat";
+    font-size: 64px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-weight: normal;
+    text-align: center;
 }
-p.heading.aboveFooter {
+/*p.heading.aboveFooter {
     padding-top: 45px;
     padding-bottom: 60px;
     font-size: 28px;
     font-family: "SF UI Display Thin";
     text-align: center;
-}
+}*/
 
 
 .animate-y {
@@ -173,8 +176,8 @@ p.heading.aboveFooter {
     position: relative;
 }
 .headerContainer .mainNav > li > a {
-    font-size: 16px;
-    font-family: "geog-sbit";
+    font-size: 14px;
+    font-family: "MuseoSans_xFat";
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #5d5d5d;
@@ -209,10 +212,12 @@ p.heading.aboveFooter {
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 30px 15px;
+    opacity: 0;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
 }
 .headerContainer .mainNav > li.active > a:after {
+    opacity: 1;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
@@ -234,16 +239,43 @@ p.heading.aboveFooter {
 .viewWrapper {
     padding-top: 60px;
 }
-.contentWrapper > .portfolioWrapper {
+/*.contentWrapper > .portfolioWrapper {
     background-color: rgba(255,255,255, 1);
     background-image: -webkit-linear-gradient(240deg, #07b5d0, #39f2c0, #39f2c0, #d1e351, #fd5b1b, #fc33a4, #aa18ba, #0e5cde, #04a7e5, #39f2c0, #07b5d0);
     background-image: linear-gradient(-150deg, #07b5d0, #39f2c0, #39f2c0, #d1e351, #fd5b1b, #fc33a4, #aa18ba, #0e5cde, #04a7e5, #39f2c0, #07b5d0);
-    /*opacity: 0;*/
+    !*opacity: 0;*!
 }
 .contentWrapper > .aboutWrapper {
     background-color: rgba(255,255,255, 1);
     background-image: -webkit-linear-gradient(240deg, #07b5d0, #39f2c0);
     background-image: linear-gradient(-150deg, #07b5d0, #39f2c0);
+}*/
+.inner-blue {
+    background-color: #00B0FF;
+}
+.inner-red {
+    background-color: #FF1744;
+}
+.inner-lime {
+    background-color: #D1E351;
+}
+.inner-teal {
+    background-color: #1DE9B6;
+}
+.inner-pink {
+    background-color: #FF186A;
+}
+.inner-purple {
+    background-color: #D500F9;
+}
+.inner-orange {
+    background-color: #FF6E0A;
+}
+.inner-darkBlue {
+    background-color: #03A9F4;
+}
+.inner-black {
+    background-color: #000000;
 }
 /************************************************************/
 /***** portfolio ********************************************/
@@ -373,7 +405,7 @@ p.heading.aboveFooter {
     transform: translateY(-50%);
     z-index: 1;
 }
-.intro > .introInner * {
+.intro .introInner * {
     color: rgba(255,255,255, 1);
 }
 /**********/
@@ -398,7 +430,8 @@ p.heading.aboveFooter {
     font-size: 27px;
     position: relative;
 }
-.scrollerConatiner > .scroller:before {
+.scrollerConatiner > .scroller:before,
+.footerContainer a.social > div.linkContent:before {
     content: '';
     display: block;
     position: absolute;
@@ -418,7 +451,8 @@ p.heading.aboveFooter {
     -ms-animation: bounce 0.35s infinite alternate;
     -o-animation: bounce 0.35s infinite alternate;
 }
-.scrollerConatiner > .scroller:hover:before {
+.scrollerConatiner > .scroller:hover:before,
+.footerContainer a.social:hover > div.linkContent:before {
     transform: scale(1.1, 1.1);
     -webkit-transform: scale(1.1, 1.1);
 }
@@ -509,24 +543,29 @@ p.heading.aboveFooter {
 .tabs > li.active:after {
     -webkit-transform: translate(-50%, 1px);
     transform: translate(-50%, 1px);
+    opacity: 1;
 }
 
 
-
+.introInner h2 {
+    font-family: "SF UI Display Thin";
+    font-size: 46px;
+}
 .introRoles {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
 }
-.introRoles h1,
+.intro .introInner .introRoles * {
+    color: rgba(255,255,255, 0.75);
+}
+.introRoles h2,
 .introRoles label {
     margin-bottom: 0;
-    font-size: 22px;
-    font-family: "SF UI Display Regular";
-    color: rgba(0,0,0, 0.5);
+    font-size: 20px;
+    font-family: "SF UI Display Thin";
 }
 .introRoles label {
     padding-top: 15px;
     font-size: 18px;
-    color: rgba(0,0,0, 0.5);
 }
 .introTabs {
     margin-bottom: 0;
@@ -545,100 +584,86 @@ p.heading.aboveFooter {
     width: 75px;
     height: 75px;
     cursor: default;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(255,255,255, 1);
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
-.introTabs > li > div > i {
-    font-size: 27px;
-    color: rgba(255,255,255, 0.95);
+.intro .introInner .introTabs > li > div > i {
+    font-size: 28px;
+    color: #FF186A;
 }
 
 /***** footer directive *************************************/
 /************************************************************/
 .footerWrapper {
-    bottom: 0;
     width: 100%;
-    display: block;background-color: rgba(255,255,255, 1);
-    background-image: -webkit-linear-gradient(240deg, #07b5d0, #39f2c0);
-    background-image: linear-gradient(-150deg, #07b5d0, #39f2c0);
 }
 .footerContainer {
-    padding: 75px 15px;
     text-align: center;
-    background-color: rgba(0,0,0, 0.75);
-}
-.footerContainer button {
-    border-radius: 1000px;
-    -webkit-border-radius: 1000px;
-    line-height: normal;
-    padding: 0;
-}
-.footerContainer button.linkedin {
-    width: 50px;
-    height: 50px;
 }
 .footerContainer i {
     font-size: 18px;
     line-height: normal;
 }
-.footerNav/*,
-.footerCopyright*/ {
-    display: flex;
-    display: -webkit-flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    padding: 15px;
-    opacity: 0;
-}
-.footerNav > li {
-    padding: 0 7.5px;
-}
-.footerNav > li a {
-    padding: 0 45px;
-    height: 50px;
-    border-radius: 1000px;
-    -webkit-border-radius: 1000px;
-    border: solid 1px rgba(255,255,255, 1);
+.footerContainer a {
+    height: 150px;
+    position: relative;
     cursor: pointer;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
     color: rgba(255,255,255, 1);
     transition: all 0.25s;
     -webkit-transition: all 0.25s;
+    font-size: 16px;
 }
-.footerNav > li a.social {
-    width: 50px;
-    padding: 0;
-}
-.footerNav > li a.cv {
-    border-color: transparent;
-    background-color: rgba(255,255,255, 0.9);
-    color: rgba(0,0,0, 0.6);
-    font-family: "geog-sbit";
+.footerContainer .cv {
+    font-family: "MuseoSans_Fat";
     text-transform: uppercase;
-}
-.footerNav > li a.cv > i {
-    margin-right: 7.5px;
-}
-.footerNav > li a:hover {
-    color: rgba(255,110,10, 1);
-}
-.footerNav > li a.social:hover {
-    border-color: rgba(255,110,10, 1);
-}
-.footerNav > li a.cv:hover {
-    background-color: rgba(255,255,255, 1);
+    letter-spacing: 1px;
 }
 
-/*.footerCopyright {
-    color: rgba(255,255,255, 0.3);
-    font-size: 16px;
-    font-family: "SF UI Display Thin";
-    margin-top: 30px;
-}*/
+.footerContainer a > div.linkContent ,
+.footerContainer a.social > div.linkContent > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.footerContainer a > div.linkContent {
+    width: 100%;
+}
+.footerContainer .cv i {
+    margin-right: 10px;
+}
+
+.footerContainer a.social > div.linkContent {
+    width: 50px;
+    height: 50px;
+}
+.footerContainer a.social > div.linkContent:before {
+    /* done with .scrollerConatiner > .scroller:before */
+}
+.footerContainer a.social:hover > div.linkContent:before {
+    /* done with .scrollerConatiner > .scroller:hover:before */
+}
+
+.footerCopyright {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    line-height: normal;
+    color: rgba(255,255,255, 0.5);
+    font-size: 14px;
+    font-family: "SF UI Display Light";
+}
 
 
 /***** loader [add loadingContent class to the body] *****/
@@ -741,6 +766,7 @@ canvas.circles {
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0.5;
     -webkit-mask-box-image: -webkit-linear-gradient(top,transparent, transparent 0%, white 10%, white 90%, transparent 100%);
 }
 
@@ -755,7 +781,7 @@ canvas.circles {
 }
 .bio .bioContent {
     order: 2;
-    font-size: 22px;
+    /*font-size: 22px;*/
 }
 .bioImg img {
     position: absolute;
@@ -774,6 +800,39 @@ canvas.circles {
     -ms-transform: scale(1.1, 1.1);
     -o-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
+}
+.bio .bioContent .cvContainer {
+    margin-top: 45px;
+}
+.bio .bioContent .cv {
+    display: block;
+    font-family: "MuseoSans_Fat";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255,255,255, 1);
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    height: 75px;
+    cursor: pointer;
+    border-radius: 2.5px;
+    -webkit-border-radius: 2.5px;
+    position: relative;
+}
+.bio .bioContent .cv > .linkContent {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bio .bioContent .cv i {
+    margin-right: 10px;
 }
 /***** history *****/
 .historyContainer {
