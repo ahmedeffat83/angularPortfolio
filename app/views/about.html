@@ -2,13 +2,13 @@
     <div class="intro inner-red">
         <!--<particles-dir id="particles" class="particlesCanvas"></particles-dir>-->
         <div class="introInner">
-            <div>My name is</div>
-            <h1 class="heading">Ahmed Abdelhady</h1>
-            <div>I am a</div>
+            <div>I am</div>
+            <h1>Ahmed Abdelhady</h1>
+            <div>Best defined as</div>
             <h2>
                 <typed-dir strings="professions"></typed-dir>
             </h2>
-            <div>Well known online under Karakeeb.me</div>
+            <!--<div>Well known online under Karakeeb.me</div>-->
         </div>
         <div class="scrollerConatiner">
             <a class="scroller" ng-if="scroller" ng-click="slideDown()"><i class="fa fa-angle-down"
@@ -18,9 +18,9 @@
         <!--<canvas class="circles"></canvas>-->
     </div>
 
-    <div class="scrollingTarget inner-darkBlue">
-        <h1 class="heading">Hey ..</h1>
-        <div class="sections aboutContent">
+    <div class="inner-blue">
+        <h1 class="inner">Hey ..</h1>
+        <div class="sections aboutContent scrollingTarget">
             <div class="bio flex-box section animate-y">
                 <div class="col col-md-7 wide bioContent">
                     <div>
@@ -59,7 +59,7 @@
                 <div class="col col-md-7 wide">
                     <div>
                         <h2>Skills</h2>
-                        <ul>
+                        <ul class="contentList">
                             <li>
                                 Utilizing User-Centred Design (UCD) principles and accessibility compliance.
                             </li>
@@ -98,7 +98,7 @@
     </div>
     <div class="historyContainer inner-lime">
         <div class="history">
-            <h1 class="heading">Employment history</h1>
+            <h1 class="inner">Employment history</h1>
             <div class="timeline">
                 <div class="year" ng-repeat="year in timeline">
                     <div class="yearTitle animate-fade">
@@ -111,18 +111,44 @@
                             <div>
                                 <div class="positionHead">
                                     <div>
-                                        <div class="logo">
+                                        <div class="logo" ng-class="{'border': position.data.border}">
                                             <img ng-src="{{position.data.logo}}"/>
                                         </div>
                                     </div>
                                     <div class="header">
-                                        <div>{{position.data.name}}</div>
+                                        <h3 class="fat">{{position.data.name}}</h3>
                                         <div>{{position.data.location}}</div>
-                                        <div>{{position.data.start}} - {{position.data.end}}</div>
+
+                                        <div class="headerLinks clearfix">
+                                            <div ng-repeat="(key, value) in position.links">
+                                                <a href="{{value}}" target="_blank">
+                                                    <i class="fa"
+                                                       ng-class="{
+                                                       'fa-android': key == 'android',
+                                                       'fa-apple' : key == 'apple',
+                                                       'fa-linkedin' : key == 'linkedin',
+                                                       'fa-external-link-square' : key == 'url'
+                                                       }"
+                                                       aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="positionBody">
-                                    <div>{{position.data.profession}} {{position.data.role}}</div>
+                                    <div class="title">
+                                        <h3 class="fat">{{position.data.profession}}</h3>
+                                        <div>{{position.data.role}}</div>
+                                        <div>{{position.data.start}} - {{position.data.end}}</div>
+                                    </div>
+                                    <div class="body">
+                                        <h4 class="fat">Responsibilities:</h4>
+                                        <ul class="responsibilities contentList">
+                                            <li ng-repeat="resp in position.responsibilities">
+                                                {{resp}}
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                             </div>

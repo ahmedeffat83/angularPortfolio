@@ -20,12 +20,23 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                     {
                         data: {
                             name: "IBM Middle East & Africa",
-                            logo: "./img/timeline/ibm.png",
+                            logo: "./img/logos/ibm.png",
+                            border: false,
                             location: "Giza, Egypt",
                             profession: "Usability/UX consultant",
                             role: "Full time",
                             start: "April 2016",
                             end: "To date"
+                        },
+                        responsibilities: [
+                            "Translating business requirements and user needs into consistent and positive User Experience.",
+                            "Delivering Experience Models, Personas and User Journeys, cross-platform low and high fidelity Wireframes and Interactive prototypes.",
+                            "Conducting in-house research to test new solutions and concept developments. Including user requirements gathering and early stage concept and prototype testing, and other approaches to ensuring the user needs are fully understood in the service design.",
+                            "Conducting in-house persona development and card sorting researches."
+                        ],
+                        links: {
+                            url: "https://www.ibm.com/eg-en/",
+                            linkedin: "https://www.linkedin.com/jobs/ibm-middle-east-and-africa-jobs?country=gb"
                         },
                         category: "job",
                         alignment: "left",
@@ -39,27 +50,51 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                     {
                         data: {
                             name: "Vodafone Germany",
-                            logo: "./img/timeline/vodafone.png",
+                            logo: "./img/logos/vodafone.png",
+                            border: false,
                             location: "Düsseldorf, Germany",
                             profession: "UX/Front-End lead developer",
                             role: "Full time",
-                            start: "April 2016",
-                            end: "To date"
+                            start: "August 2015",
+                            end: "March 2016"
                         },
+                        links: {
+                            url: "https://www.vodafone.de/",
+                            linkedin: "https://www.linkedin.com/company-beta/1217?pathWildcard=1217"
+                        },
+                        responsibilities: [
+                            "Leading Single-Page Application (SPA) Development and Interaction processes, built with AngularJS.",
+                            "Translating business requirements and user needs into consistent and positive User Experience.",
+                            "Evaluating new design proposals and recommend well-structured solutions that should lead to gradually enhanced efficiency and performance.",
+                            "Building low and high fidelity Wireframes, Prototypes, User Interaction Modules.",
+                            "Building Cross Browser/Platform Compatible web/Hybrid applications."
+                        ],
                         category: "job",
                         alignment: "left",
                         push: false
                     },
                     {
                         data: {
-                            name: "iHorizons Egyptِ",
-                            logo: "./img/timeline/ihorizons.png",
+                            name: "iHorizons Egypt",
+                            logo: "./img/logos/ihorizons.png",
+                            border: false,
                             location: "Cairo, Egypt",
                             profession: "UX/Front-End lead developer",
                             role: "Full time",
                             start: "January 2015",
                             end: "July 2015"
                         },
+                        links: {
+                            url: "http://www.ihorizons.com/site/topics/index.asp?cu_no=2&temp_type=44",
+                            linkedin: "https://www.linkedin.com/company/41607"
+                        },
+                        responsibilities: [
+                            "Leading Oracle ADF Skinning process (Full front-end customization)",
+                            "Translating business requirements and user needs into consistent and positive User Experience.",
+                            "Validating outputs using Card Sorting, User Researches, In-Person Usability Testing and other methods.",
+                            "Building low and high fidelity Wireframes, Prototypes, User Interaction Modules.",
+                            "Creating each Module and Prototype with all recent Search Engine Optimization and Cross Browser Compatibility principles in mind"
+                        ],
                         category: "job",
                         alignment: "right",
                         push: true
@@ -73,12 +108,23 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                         data: {
                             name: "Incorta Egypt",
                             logo: "",
+                            border: true,
                             location: "Cairo, Egypt",
                             profession: "UX/Front-End designer",
                             role: "Part time",
                             start: "May 2014",
                             end: "December 2014"
                         },
+                        links: {
+                            url: "http://incorta.com/",
+                            linkedin: "https://www.linkedin.com/company/incorta"
+                        },
+                        responsibilities: [
+                            "Translating business requirements and user needs into consistent and positive User Experience.",
+                            "Delivering Experience Models, Personas and User Journeys, low and high fidelity Wireframes for iPad and Web versions",
+                            "Conducting in-house research to test new solutions and concept developments. Including user requirements gathering and early stage concept and prototype testing, guerrilla research, and other approaches to ensuring the user needs are fully understood in the service design.",
+                            "Conducting in-house persona development and card sorting researches."
+                        ],
                         category: "job",
                         alignment: "left",
                         push: false
@@ -91,13 +137,26 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                     {
                         data: {
                             name: "ITWorx",
-                            logo: "",
+                            logo: "./img/logos/itworx.png",
+                            border: false,
                             location: "Cairo, Egypt",
                             profession: "Interaction designer",
                             role: "Full time",
                             start: "February 2016",
                             end: "June 2014"
                         },
+                        links: {
+                            url: "http://www.itworx.com/",
+                            linkedin: "https://www.linkedin.com/company/itworx"
+                        },
+                        responsibilities: [
+                            "MS SharePoint custom UI development.",
+                            "Single-page applications development using AngularJS and other frameworks",
+                            "Translating business requirements and user needs into consistent and positive User Experience.",
+                            "Validating outputs using Card Sorting, User Researches, In-Person Usability Testing and other methods.",
+                            "Building low and high fidelity Wireframes, Prototypes, User Interaction and Animation Models using HTML[5], CSS[3] and JavaScript/jQuery.",
+                            "Creating each Module and Prototype with all recent Search Engine Optimization and Cross Browser Compatibility principles in mind."
+                        ],
                         category: "job",
                         alignment: "left",
                         push: false
@@ -105,13 +164,24 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                     {
                         data: {
                             name: "StarWallet Inc.",
-                            logo: "./img/timeline/starwallet.png",
+                            logo: "./img/logos/starwallet.png",
+                            border: true,
                             location: "Cairo, Egypt",
                             profession: "UX Researcher",
                             role: "Part time",
                             start: "April 2013",
                             end: "March 2014"
                         },
+                        links: {
+                            url: "https://starwallet.com/",
+                            linkedin: "https://www.linkedin.com/company/starwallet"
+                        },
+                        responsibilities: [
+                            "Conducting in-house researches to test new solutions and ongoing enhancements. Including user requirements gathering, prototype testing, guerrilla researches, personas development, card sorting researches and other approaches to ensuring the user needs are fully understood and highlighted.",
+                            "Working with products' owners to devise appropriate research strategies to generate focused insights and to convert concepts into high quality stimulus material.",
+                            "Evaluating new design proposals and recommend well-structured solutions that should lead to gradually enhanced efficiency and performance.",
+                            "Working closely with designers and developers to turn users' data into actionable product/service requirements that feed into prototype development and influence product direction."
+                        ],
                         category: "job",
                         alignment: "right",
                         push: true
@@ -124,13 +194,24 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                     {
                         data: {
                             name: "Vodafone Egypt",
-                            logo: "./img/timeline/vodafone.png",
+                            logo: "./img/logos/vodafone.png",
+                            border: false,
                             location: "Giza, Egypt",
                             profession: "Interaction designer",
                             role: "Full time",
                             start: "June 2011",
                             end: "January 2013"
                         },
+                        links: {
+                            url: "http://www.vodafone.com.eg/",
+                            linkedin: "https://www.linkedin.com/company-beta/1217?pathWildcard=1217"
+                        },
+                        responsibilities: [
+                            "Translating business requirements and user needs into consistent and positive User Experience.",
+                            "Delivering Experience Models, Personas and User Journeys, Wireframes and Site Maps.",
+                            "Building low and high fidelity Wireframes, Prototypes, User Interaction and Animation Models using HTML[5], CSS[3] and JavaScript/jQuery.",
+                            "Creating each Module and Prototype with all recent Search Engine Optimization and Cross Browser Compatibility principles in mind."
+                        ],
                         category: "job",
                         alignment: "left",
                         push: false
@@ -144,12 +225,22 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                         data: {
                             name: "Asset Technology Group",
                             logo: "",
+                            border: true,
                             location: "Cairo, Egypt",
                             profession: "Interaction designer",
                             role: "Full time",
                             start: "August 2009",
                             end: "May 2011"
                         },
+                        links: {
+                            url: "http://asset.com.eg/",
+                            linkedin: "https://www.linkedin.com/company/315454?trk=pro_other_cmpy"
+                        },
+                        responsibilities: [
+                            "Translating business requirements and user needs into consistent and positive User Experience.",
+                            "Building high fidelity Wireframes, Prototypes, User Interaction and Animation Models using HTML[5], CSS[3] and JavaScript/jQuery.",
+                            "Creating each Module and Prototype with all recent Search Engine Optimization and Cross Browser Compatibility principles in mind."
+                        ],
                         category: "job",
                         alignment: "left",
                         push: false
@@ -163,12 +254,22 @@ angular.module('karakeeb').controller('aboutCtrl', ['$scope', '$state', '$timeou
                         data: {
                             name: "Elmotaheda Web",
                             logo: "",
+                            border: true,
                             location: "Cairo, Egypt",
                             profession: "UX/Interactive/Front-End developer",
                             role: "Full time",
                             start: "January 2007",
                             end: "July 2009"
                         },
+                        links: {
+                            android: "https://play.google.com/store/apps/details?id=ae.gov.dha.hayati&hl=en_GB",
+                            apple: "https://itunes.apple.com/gb/app/hayati-hyaty-diabetes-guide/id1046438276?mt=8"
+                        },
+                        responsibilities: [
+                            "Translating business requirements and user needs into consistent and positive User Experience.",
+                            "Building high fidelity Wireframes, Prototypes, User Interaction and Animation Models using HTML, CSS, JavaScript/jQuery and ActionScript 2.0",
+                            "Creating each Module and Prototype with all recent Search Engine Optimization and Cross Browser Compatibility principles in mind."
+                        ],
                         category: "job",
                         alignment: "left",
                         push: false

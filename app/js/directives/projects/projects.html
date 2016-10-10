@@ -1,23 +1,49 @@
 <ul class="projects sections">
     <li ng-repeat="project in data track by $index" class="project section flex-box animate-y">
         <div class="col col-md-5 tight introContainer">
+
             <div>
-                <div>
-                    <h2>{{project.title}}</h2>
+                <div class="projectHead">
+                    <div>
+                        <div class="logo" ng-class="{'border': project.border}">
+                            <img ng-src="{{project.logo}}"/>
+                        </div>
+                    </div>
+                    <div class="header">
+                        <h3 class="fat">{{project.title}}</h3>
+                        <div>{{project.output.join(', ')}}</div>
+                        <div class="headerLinks clearfix">
+                            <div ng-repeat="(key, value) in project.links">
+                                <a href="{{value}}" target="_blank">
+                                    <i class="fa"
+                                       ng-class="{
+                                       'fa-android': key == 'android',
+                                       'fa-apple' : key == 'apple',
+                                       'fa-linkedin' : key == 'linkedin',
+                                       'fa-external-link-square' : key == 'url'
+                                       }"
+                                       aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label>Client:</label> {{project.client}}
-                </div>
-                <div>
-                    <label>Year:</label> {{project.year}}
-                </div>
-                <div>
-                    <label>Output:</label> {{project.output.join(', ')}}
-                </div>
-                <div class="rolesContainer">
-                    <tabs-dir data="project.roles"></tabs-dir>
+                <div class="projectBody">
+                    <div class="title">
+                        <h3 class="fat">{{project.client}}</h3>
+                        <div>{{project.year}}</div>
+                        <div>{{project.summary}}</div>
+                    </div>
+                    <div class="body">
+                        <h4 class="fat">Contribution:</h4>
+                        <div class="rolesContainer">
+                            <tabs-dir data="project.roles"></tabs-dir>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
 
         <div class="col col-md-7 wide sliderContainer">

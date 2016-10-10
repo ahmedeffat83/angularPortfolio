@@ -31,17 +31,51 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
+label {
+    font-weight: inherit;
+    margin: 0;
+}
+/***** Headers *****/
 h1, h2, h3, h4, h5, h6 {
     font-family: "SF UI Display Regular";
-    font-size: 42px;
-    /*text-transform: uppercase;*/
-    margin-top: 0;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: block;
     font-weight: 400;
+    line-height: normal;
+    color: rgba(0,0,0, 0.7);
 }
+h1.fat, h2.fat, h3.fat, h4.fat, h5.fat, h6.fat {
+    font-family: "SF UI Display Bold";
+}
+h1 {
+    color: rgba(255,255,255, 1);
+    font-family: "MuseoSans_xFat";
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 150%;
+    font-weight: normal;
+    text-align: center;
+}
+h1.bigger {
+    font-size: 52px;
+}
+h1.inner {
+    padding-top: 75px;
+    padding-bottom: 60px;
+}
+
 h2 {
     font-size: 32px;
-    color: #666;
     margin-bottom: 20px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
 }
 p {
     margin-bottom: 20px;
@@ -50,19 +84,7 @@ p {
 p:last-child {
     margin-bottom: 0;
 }
-h1.heading {
-    padding: 0;
-    margin: 0;
-    display: block;
-    color: rgba(255,255,255, 1);
-    font-family: "MuseoSans_xFat";
-    font-size: 64px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 150%;
-    font-weight: normal;
-    text-align: center;
-}
+
 /*p.heading.aboveFooter {
     padding-top: 45px;
     padding-bottom: 60px;
@@ -70,6 +92,25 @@ h1.heading {
     font-family: "SF UI Display Thin";
     text-align: center;
 }*/
+
+ul.contentList > li {
+    margin-bottom: 5px;
+    line-height: 150%;
+    padding-left: 20px;
+    position: relative;
+}
+ul.contentList > li:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: solid 1px rgba(255,110,10, 1);
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
 
 
 .animate-y {
@@ -125,6 +166,39 @@ h1.heading {
     flex-direction: column;
 }
 
+.inner-blue {
+    background-color: #41a3f3;
+}
+.inner-red {
+    background-color: #FD0202;
+}
+.inner-lime {
+    background-color: #D1E351;
+}
+.inner-teal {
+    background-color: #1DE9B6;
+}
+.inner-pink {
+    background-color: #ea1c6a;
+}
+.inner-purple {
+    background-color: #8e00ff;
+}
+.inner-orange {
+    background-color: #FF6E0A;
+}
+.inner-darkBlue {
+    background-color: #03A9F4;
+}
+.inner-black {
+    background-color: #000000;
+}
+.inner-green {
+    background-color: #5abe2b;
+}
+.inner-yellow {
+    background-color: #f5b829;
+}
 /************************************************************/
 /***** header directive *************************************/
 /************************************************************/
@@ -250,33 +324,6 @@ h1.heading {
     background-image: -webkit-linear-gradient(240deg, #07b5d0, #39f2c0);
     background-image: linear-gradient(-150deg, #07b5d0, #39f2c0);
 }*/
-.inner-blue {
-    background-color: #00B0FF;
-}
-.inner-red {
-    background-color: #FF1744;
-}
-.inner-lime {
-    background-color: #D1E351;
-}
-.inner-teal {
-    background-color: #1DE9B6;
-}
-.inner-pink {
-    background-color: #FF186A;
-}
-.inner-purple {
-    background-color: #D500F9;
-}
-.inner-orange {
-    background-color: #FF6E0A;
-}
-.inner-darkBlue {
-    background-color: #03A9F4;
-}
-.inner-black {
-    background-color: #000000;
-}
 /************************************************************/
 /***** portfolio ********************************************/
 /************************************************************/
@@ -382,6 +429,9 @@ h1.heading {
     height: 24px;
     border: solid 2.5px rgba(255,110,10, 0.5);
 }
+.sliderContainer .slides li img {
+    width: 100%;
+}
 /************************************************************/
 /************************************************************/
 /************************************************************/
@@ -458,10 +508,12 @@ h1.heading {
 }
 /************************************************************/
 /***** tabs directive ***************************************/
+.rolesContainer {
+    padding-top: 15px;
+}
 .tabs,
 .introTabs {
     display: flex;
-    margin-top: 30px;
     margin-bottom: 15px;
     border-bottom: 1px solid rgba(0,0,0, 0.15);
 }
@@ -484,12 +536,12 @@ h1.heading {
     border-radius: 1000px;
     -webkit-border-radius: 1000px;
     background-color: rgba(0,0,0, 0.1);
-    display: flex;
-    display: -webkit-flex;
+    display: block;
+    /*display: -webkit-flex;
     justify-content: center;
     -webkit-justify-content: center;
     align-items: center;
-    -webkit-align-items: center;
+    -webkit-align-items: center;*/
     position: relative;
     z-index: 1;
     cursor: pointer;
@@ -503,6 +555,13 @@ h1.heading {
     z-index: 1;
     font-size: 18px;
     color: rgba(255,255,255, 1);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .tabs > li > a > .indicator {
     position: absolute;
@@ -547,22 +606,22 @@ h1.heading {
 }
 
 
-.introInner h2 {
+/*.introInner h2 {
     font-family: "SF UI Display Thin";
     font-size: 46px;
-}
+}*/
 .introRoles {
     /*margin-top: 60px;*/
 }
 .intro .introInner .introRoles * {
     color: rgba(255,255,255, 0.75);
 }
-.introRoles h2,
+/*.introRoles h2,
 .introRoles label {
     margin-bottom: 0;
     font-size: 20px;
     font-family: "SF UI Display Thin";
-}
+}*/
 .introRoles label {
     padding-top: 15px;
     font-size: 18px;
@@ -835,12 +894,17 @@ canvas.circles {
     margin-right: 10px;
 }
 /***** history *****/
-.historyContainer {
-    padding: 50px 0;
+.historyContainer,
+.projectsWrapper {
+    display: block;
+    padding-bottom: 60px;
 }
 .history {
     position: relative;
     padding: 0;
+}
+.timeline {
+    padding: 7.5px 0;
 }
 .timeline,
 .year {
@@ -927,28 +991,141 @@ canvas.circles {
     background-position: 0 0;
     background-size: 100%;
 }
-.positionHead > div {
+.positionHead > div,
+.projectHead > div {
     display: table-cell;
     vertical-align: middle;
 }
-.positionHead > div.header {
+.positionHead > .header,
+.projectHead > .header {
     padding: 0 15px;
 }
-.positionHead  .logo {
+.positionHead > .header > *,
+.positionBody .title > *,
+.positionBody .body > *,
+.projectHead > .header > *,
+.projectBody .title > *,
+.projectBody .body > * {
+    margin-bottom: 5px;
+    line-height: normal;
+}
+.positionHead > .header > *:last-child,
+.positionBody .title > *:last-child,
+.positionBody .body > *:last-child,
+.projectHead > .header > *:last-child,
+.projectBody .title > *:last-child,
+.projectBody .body > *:last-child {
+    margin-bottom: 0;
+}
+.positionHead > .header > div,
+.positionBody .title > div,
+.projectHead > .header > div,
+.projectBody > .title > div
+{
+    font-size: 16px;
+}
+.positionHead .logo,
+.projectHead .logo {
     width: 75px;
     height: 75px;
     display: block;
     border-radius: 1000px;
     -webkit-border-radius: 1000px;
     background-color: #fafafa;
-    border: rgba(0,0,0, 0.1) solid 1px;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
-.positionHead  .logo > img {
+.positionHead .logo.border,
+.projectHead .logo.border {
+    border: rgba(0,0,0, 0.1) solid 1px;
+}
+.positionHead  .logo > img,
+.projectHead .logo > img {
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
-.positionBody {
+
+.positionHead .logo:before,
+.projectHead .logo:before {
+    content: "\f03e";
+    font-family: "FontAwesome";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: rgba(0,0,0, 0.15);
+    font-size: 24px;
+}
+.positionBody,
+.projectBody {
     padding-top: 30px;
 }
+.positionBody .title,
+.projectBody .title {
+    margin-bottom: 30px;
+}
+/*.projectHead > .header > h2 {
+    font-size: 26px;
+}*/
+/*.projectBody .title label {
+    color: rgba(0,0,0, 0.5);
+    width: 60px;
+}*/
+.headerLinks {
+    margin: 0 -5px;
+}
+.headerLinks > div {
+    float: left;
+    display: inline-block;
+    padding: 0 5px;
+}
+.headerLinks > div > a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    color: rgba(0,0,0, 0.25);
+    cursor: pointer;
+    font-size: 14px;
+}
+.headerLinks > div > a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgba(0,0,0, 0.25);
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+.headerLinks > div > a:hover {
+    color: rgba(255, 110, 10, 1);
+}
+.headerLinks > div > a:hover:before {
+    border-color: rgba(255,110,10, 1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.headerLinks > div > a > i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
 
 

@@ -6,27 +6,37 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
 
         $scope.projects = [
                 {
-                    title: "Tifli",
+                    title: "Tifli v2.0",
                     client: "Dubai healthcare authority",
                     year: "2016",
                     output: ["Hybrid mobile application"],
+                    logo: "./img/logos/tifli.png",
+                    border: false,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
                     roles: {
                         ux: {
                             percentage: 60,
                             roleSet: ["ux", "usability"]
                         },
-                        ui: {
+                        fe: {
                             percentage: 80,
-                            roleSet: ["photoshop", "illustrator"]
+                            roleSet: ["angularJs", "nodeJs", "ionic"]
                         }
                     },
-                    slides: ["http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                    links: {
+                        android: "https://play.google.com/store/apps/details?id=ae.gov.dha.tifli&hl=en_GB",
+                        apple: "https://itunes.apple.com/gb/app/tifli/id1045474741?mt=8"
+                    },
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
                 },
                 {
-                    title: "Hayati",
+                    title: "Hayati v2.0",
                     client: "Dubai healthcare authority",
                     year: "2016",
                     output: ["Hybrid mobile application"],
+                    logo: "./img/logos/hayati.png",
+                    border: false,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
                     roles: {
                         ux: {
                             percentage: 80,
@@ -37,13 +47,20 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
                             roleSet: ["angularJs", "nodeJs", "ionic"]
                         }
                     },
-                    slides: ["http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                    links: {
+                        android: "https://play.google.com/store/apps/details?id=ae.gov.dha.hayati&hl=en_GB",
+                        apple: "https://itunes.apple.com/gb/app/hayati-hyaty-diabetes-guide/id1046438276?mt=8"
+                    },
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
                 },
                 {
-                    title: "OnePOS",
+                    title: "Vodafone OnePOS",
                     client: "Vodafone Gernamy",
                     year: "2016",
                     output: ["Web application"],
+                    logo: "./img/logos/vodafone.png",
+                    border: false,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
                     roles: {
                         ux: {
                             percentage: 90,
@@ -58,13 +75,16 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
                             roleSet: ["angularJs", "nodeJs", "ionic"]
                         }
                     },
-                    slides: ["http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
                 },
                 {
                     title: "ooredoo.dz",
                     client: "ooredoo corporate",
                     year: "2014",
                     output: ["Online portal"],
+                    logo: "./img/logos/ooredoo.png",
+                    border: true,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
                     roles: {
                         ux: {
                             percentage: 90,
@@ -79,34 +99,19 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
                             roleSet: ["angularJs", "nodeJs", "ionic"]
                         }
                     },
-                    slides: ["http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
-                },
-                /*{
-                    title: "Incorta",
-                    client: "Incorta inc.",
-                    year: "2014",
-                    output: ["iPad application", "Hybrid Web application"],
-                    roles: {
-                        ux: {
-                            percentage: 50,
-                            roleSet: ["ux", "usability"]
-                        },
-                        ui: {
-                            percentage: 80,
-                            roleSet: ["illustrator"]
-                        },
-                        fe: {
-                            percentage: 95,
-                            roleSet: ["angularJs", "nodeJs", "ionic"]
-                        }
+                    links: {
+                        url: "http://www.ooredoo.dz/"
                     },
-                    slides: ["a", "b", "c", "d", "e"]
-                },*/
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                },
                 {
                     title: "HeadsUP",
                     client: "Treze Technology inc.",
                     year: "2013",
                     output: ["Web application"],
+                    logo: "",
+                    border: true,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
                     roles: {
                         ux: {
                             percentage: 70,
@@ -121,13 +126,19 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
                             roleSet: ["angularJs", "nodeJs", "ionic"]
                         }
                     },
-                    slides: ["http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                    links: {
+                        url: "https://cyberbullyradar.com/"
+                    },
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
                 },
                 {
-                    title: "StarWallet",
+                    title: "StarWallet Rewards v1.0",
                     client: "StarWallet labs",
                     year: "2013",
                     output: ["Hybrid mobile application", "Web application"],
+                    logo: "./img/logos/starwallet.png",
+                    border: true,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
                     roles: {
                         ux: {
                             percentage: 70,
@@ -142,13 +153,21 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
                             roleSet: ["angularJs", "ionic"]
                         }
                     },
-                    slides: ["http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                    links: {
+                        url: "https://starwallet.com/",
+                        android: "https://play.google.com/store/apps/details?id=com.starwallet.mainstarwalletapp&hl=en_GB",
+                        apple: "https://itunes.apple.com/om/app/starwallet-rewards/id1052579512?mt=8"
+                    },
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
                 },
                 {
                     title: "Vodafone.com.eg",
                     client: "Vodafone Egypt foundation",
                     year: "2012",
                     output: ["Online portal"],
+                    logo: "./img/logos/vodafone.png",
+                    border: false,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
                     roles: {
                         ux: {
                             percentage: 65,
@@ -163,13 +182,19 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
                             roleSet: ["angularJs", "nodeJs", "ionic"]
                         }
                     },
-                    slides: ["http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                    links: {
+                        url: "http://www.vodafone.com.eg/"
+                    },
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
                 },
                 {
                     title: "Government.ae",
                     client: "UAE Government",
                     year: "2011",
                     output: ["Online portal"],
+                    logo: "./img/logos/uae.png",
+                    border: true,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
                     roles: {
                         ux: {
                             percentage: 80,
@@ -184,7 +209,10 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
                             roleSet: ["nodeJs", "ionic"]
                         }
                     },
-                    slides: ["http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                    links: {
+                        url: "http://government.ae/"
+                    },
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
                 }
             ];
 
