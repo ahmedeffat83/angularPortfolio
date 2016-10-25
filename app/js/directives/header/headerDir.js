@@ -1,5 +1,5 @@
 karakeeb.directive('headerDir',
-    function ($timeout, karakeebSrvc) {
+    function ($timeout, $rootScope, karakeebSrvc) {
     return {
         restrict: 'EA',
         replace: false,
@@ -11,7 +11,10 @@ karakeeb.directive('headerDir',
 
             $timeout(function () {
                 $(element).find(".headerWrapper a").click(function () {
-                    karakeebSrvc.scrollTo(0, 500);
+                    var eleParent = $(this).parent();
+                    if(eleParent.hasClass("active")) {
+                        karakeebSrvc.scrollTo(0, 500);
+                    }
                 })
             });
         }
