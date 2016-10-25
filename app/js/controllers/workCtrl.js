@@ -6,6 +6,29 @@ angular.module('karakeeb').controller('workCtrl', ['$scope', '$state', '$timeout
 
         $scope.projects = [
                 {
+                    title: "Boots.com",
+                    client: "Boots UK",
+                    year: "2016",
+                    output: ["eCommerce website"],
+                    logo: "./img/logos/boots.png",
+                    border: false,
+                    summary: "Translating business requirements and user needs into consistent and positive User Experience",
+                    roles: {
+                        ux: {
+                            percentage: 40,
+                            roleSet: ["ux", "usability"]
+                        },
+                        fe: {
+                            percentage: 90,
+                            roleSet: ["Javascript", "nodeJs", "ionic"]
+                        }
+                    },
+                    links: {
+                        url: "http://www.boots.com"
+                    },
+                    slides: ["./img/work/tifli-1.png", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150", "http://placehold.it/350x150"]
+                },
+                {
                     title: "Tifli v2.0",
                     client: "Dubai healthcare authority",
                     year: "2016",

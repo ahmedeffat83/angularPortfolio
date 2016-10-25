@@ -29,18 +29,20 @@
                     </div>
                 </div>
                 <div class="projectBody">
+                    <div class="switcher"></div>
                     <div class="title">
                         <h3 class="fat">{{project.client}}</h3>
                         <div>{{project.year}}</div>
                         <div>{{project.summary}}</div>
                     </div>
-                    <div class="body">
+                    <!--<div class="body">
                         <h4 class="fat">Contribution:</h4>
                         <div class="rolesContainer">
                             <tabs-dir data="project.roles"></tabs-dir>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
+                <a class="projectBodySwitcher" ng-click="projectBodySwitcher()">Contribution</a>
             </div>
 
 

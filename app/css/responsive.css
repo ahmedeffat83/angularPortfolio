@@ -161,6 +161,7 @@
         right: 0;
         bottom: 0;
         left: 15px;
+        overflow: auto;
     }
     .sections.projects > .section:nth-child(even) .tight > div {
         right: 15px;
@@ -172,4 +173,17 @@
         padding-right: 120px;
     }
 
+}
+
+
+/***** animate *****/
+.loading-noAni .loader.theme-about:before, .loading-default .loader.theme-about:before {
+    -webkit-animation: loader-in 0.2s 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: loader-in 0.2s 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    transition: none !important
+}
+
+.loader.ng-animate:before {
+    -webkit-animation: loader-out 0.4s 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: loader-out 0.4s 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
 }
